@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jumelage est le plus grand festival de talents émergents : plein de contenus variés et des artistes tous plus incroyables les uns que les autres." />
+    <title>JUMELAGE</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="/">
+            <img src="assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" />
+        </a>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list u-list-unstyled">
+                <a href="index.html" class="headerlogo">
+                    <img src="assets/icons/Logo (3).svg" alt="" class="headerlogo-image" aria-hidden="true">
+                    <span>Chorus Symphonia</span>
+                </a>
+                <li class="menu__item"><a class="menu__link" href="/infospratique.html">Infos Pratiques</a></li>
+                <li class="menu__item"><a class="menu__link" href="/apropos.html">À Propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="/artiste.html">Artiste collection</a></li>
+                <li class="menu__item"><a class="menu__link" href="/scene.html">4 Scene</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+
+    <section class="hero">
+        <img src="/assets/img/hero_programme.avif" class="hero__background" alt="">
+        <h1 class="hero__title--bottom">Programme</h1>
+    </section>
+
+
+    <section class="program__filters">
+
+
+        <form class="program-search">
+            <label for="program-search-input" class="program-search__label">
+                Rechercher un artiste
+            </label>
+            <input type="search" id="program-search-input" class="program-search__input" placeholder="Rechercher">
+        </form>
+
+    <div class="program-days">
+    
+        <a href="#day-friday" class="program-days__button program-days__button--active">
+            Vendredi
+        </a>
+    
+        <a href="#day-saturday" class="program-days__button">
+            Samedi
+        </a>
+    
+        <a href="#day-sunday" class="program-days__button">
+            Dimanche
+        </a>
+    
+        <button class="program-days__add" type="button">
+            +
+        </button>
+    
+    </div>
+
+    </section>
+
+    
+      
+    <section class="program__day" id="day-friday">
+            <h2 class="program__day-title">Vendredi 28 août</h2>
+        
+           
+
+        <ul class="program-list">
+
+            
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Carley Jener</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+
+                <div class="program-card__scene">
+                    Scène 1
+                </div>
+
+                <div class="program-card__time">
+                    16h - 18h
+                </div>
+            </li>
+
+            
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Kira Montrel</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+
+                <div class="program-card__scene">
+                    Scène 4
+                </div>
+
+                <div class="program-card__time">
+                    18h - 20h
+                </div>
+            </li>
+
+            
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Orion Trellian</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+
+                <div class="program-card__scene">
+                    Scène 3
+                </div>
+
+                <div class="program-card__time">
+                    20h - 22h
+                </div>
+            </li>
+
+            
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Eden Kaloris</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+
+                <div class="program-card__scene">
+                    Scène 2
+                </div>
+
+                <div class="program-card__time">
+                    22h - 24h
+                </div>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section class="program__day--background" id="day-saturday">
+        <h2 class="program__day-title--light">Samedi 29 août</h2>
+
+    
+        <ul class="program-list">
+    
+    
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Jaden Folmar</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+    
+                <div class="program-card__scene">
+                    Scène 4
+                </div>
+    
+                <div class="program-card__time">
+                    16h - 18h
+                </div>
+            </li>
+    
+    
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Silas Heraven</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+    
+                <div class="program-card__scene">
+                    Scène 2
+                </div>
+    
+                <div class="program-card__time">
+                    18h - 20h
+                </div>
+            </li>
+    
+    
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Maël Drovensky</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+    
+                <div class="program-card__scene">
+                    Scène 1
+                </div>
+    
+                <div class="program-card__time">
+                    20h - 22h
+                </div>
+            </li>
+    
+    
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Tarek Solvim</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+    
+                <div class="program-card__scene">
+                    Scène 3
+                </div>
+    
+                <div class="program-card__time">
+                    22h - 24h
+                </div>
+            </li>
+    
+        </ul>
+    
+    </section>
+
+    <section class="program__day" id="day-sunday">
+        <h2 class="program__day-title">Dimanche 30 août</h2>
+    
+        <ul class="program-list">
+    
+    
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Mira Olestrad</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+    
+                <div class="program-card__scene">
+                    Scène 2
+                </div>
+    
+                <div class="program-card__time">
+                    16h - 18h
+                </div>
+            </li>
+    
+    
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Lioren Savrek</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+    
+                <div class="program-card__scene">
+                    Scène 3
+                </div>
+    
+                <div class="program-card__time">
+                    18h - 20h
+                </div>
+            </li>
+    
+    
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Deyan Morliss</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+    
+                <div class="program-card__scene">
+                    Scène 1
+                </div>
+    
+                <div class="program-card__time">
+                    20h - 22h
+                </div>
+            </li>
+    
+    
+            <li class="program-card">
+                <div class="program-card__artist">
+                    <p class="program-card__name">Neriah Volsten</p>
+                    <p class="program-card__genre">Artiste Folk</p>
+                </div>
+    
+                <div class="program-card__scene">
+                    Scène 4
+                </div>
+    
+                <div class="program-card__time">
+                    22h - 24h
+                </div>
+            </li>
+    
+        </ul>
+    
+    </section>
+
+<section class="program-download">
+
+    <div class="program-download__content">
+
+        <p class="program-download__text">
+            Retrouvez le programme complet du festival, avec l’ensemble des artistes,
+            horaires et scènes.
+        </p>
+
+        <p class="program-download__text">
+            Téléchargez la version PDF
+        </p>
+
+        <a href="" class="program-download__link">
+            <img src="assets/icons/téléchargement-Light.svg" alt="">
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+    <footer class="footer" aria-labelledby="footer-title">
+    
+        <div class="footer__content">
+    
+            <div class="footer__logo">
+                <a href="/index.html" class="footer__logo-link">
+                    <img src="/assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" class="footer__logo-img">JUMELAGE
+                </a>
+            </div>
+    
+            <form class="footer__newsletter" aria-label="Inscription à la newsletter">
+                <label for="newsletter-email" class="footer__newsletter-label">Votre adresse mail</label>
+                <div class="footer__newsletter-field">
+                    <input id="newsletter-email" type="email" class="footer__newsletter-input"
+                        placeholder="Votre adresse mail">
+                    <button class="footer__newsletter-btn">
+                        S’INSCRIRE
+                        <span class="footer__newsletter-arrow">></span>
+                    </button>
+                </div>
+            </form>
+    
+            <nav class="footer__menu" aria-label="Menu du footer">
+                <h3 class="footer__menu-title">Menu</h3>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="infospratique.html" class="footer__menu-link">Infos pratiques</a>
+                        |</li>
+                    <li class="footer__menu-item"><a href="apropos.html" class="footer__menu-link">À propos</a> |</li>
+                    <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact</a> |</li>
+                    <li class="footer__menu-item"><a href="artiste.html" class="footer__menu-link">Artiste</a> |</li>
+                    <li class="footer__menu-item"><a href="scene.html" class="footer__menu-link">Scène</a> |</li>
+                </ul>
+            </nav>
+    
+            <div class="footer__socials">
+                <h3 class="footer__socials-title">Nos réseaux</h3>
+                <ul class="footer__socials-list">
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_X_Light.svg"
+                                alt="X"></a></li>
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Facebook_Light.svg"
+                                alt="Facebook"></a>
+                    </li>
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Instagram_Light.svg"
+                                alt="Instagram"></a>
+                    </li>
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_TikTok_Light.svg"
+                                alt="TikTok"></a></li>
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_YouTube_Light.svg"
+                                alt="YouTube"></a></li>
+                </ul>
+            </div>
+    
+            <ul class="footer__legal">
+                <li><a href="#" class="footer__legal-link">Mentions légales</a></li>
+                <li><a href="#" class="footer__legal-link">Politique de confidentialité</a></li>
+                <li><a href="#" class="footer__legal-link">CGU</a></li>
+            </ul>
+    
+            <hr class="footer__separator">
+    
+            <p class="footer__festival">JUMELAGE Festival 2026</p>
+            <p class="footer__copy">&copy; JUMELAGE</p>
+    
+        </div>
+    </footer>
+    
+    
+    </body>
+    
+    </html>

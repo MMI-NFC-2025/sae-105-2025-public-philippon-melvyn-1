@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jumelage est le plus grand festival de talents émergents : plein de contenus variés et des artistes tous plus incroyables les uns que les autres." />
+    <title>JUMELAGE</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="/">
+            <img src="assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" />
+        </a>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list u-list-unstyled">
+                <a href="index.html" class="headerlogo">
+                    <img src="assets/icons/Logo (3).svg" alt="" class="headerlogo-image" aria-hidden="true">
+                    <span>Chorus Symphonia</span>
+                </a>
+                <li class="menu__item"><a class="menu__link" href="/programme.html">Programme</a></li>
+                <li class="menu__item"><a class="menu__link" href="/infospratique.html">Infos Pratiques</a></li>
+                <li class="menu__item"><a class="menu__link" href="/apropos.html">À Propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/artiste.html">Artiste collection</a></li>
+                <li class="menu__item"><a class="menu__link" href="/scene.html">4 Scene</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+<main class="contact">
+
+    <section class="contact__intro">
+        <h1 class="contact__title">Contactez-nous</h1>
+        <p class="contact__text">
+            Pour toute question, demande d’information ou prise de contact avec notre équipe,
+            vous pouvez utiliser le formulaire ci-dessous ou consulter nos coordonnées.
+        </p>
+    </section>
+
+    <section class="contact__form-section">
+        <form class="contact-form" action="#" method="post">
+
+            <div class="contact-form__field">
+                <label for="lastname" class="contact-form__label">Nom</label>
+                <input type="text" id="lastname" name="lastname" class="contact-form__input" placeholder="Nom" required>
+            </div>
+
+            <div class="contact-form__field">
+                <label for="firstname" class="contact-form__label">
+                    Prénom <span class="contact-form__optional">(facultatif)</span>
+                </label>
+                <input type="text" id="firstname" name="firstname" class="contact-form__input" placeholder="Prénom">
+            </div>
+
+            <div class="contact-form__field">
+                <label for="email" class="contact-form__label">Adresse mail</label>
+                <input type="email" id="email" name="email" class="contact-form__input" placeholder="Adresse mail"
+                    required>
+            </div>
+
+            <div class="contact-form__field contact-form__field--textarea">
+                <label for="message" class="contact-form__label">Commentaire</label>
+                <textarea id="message" name="message" class="contact-form__textarea" placeholder="Commentaire" rows="6"
+                    required></textarea>
+            </div>
+
+            <div class="contact-form__actions">
+                <button type="submit" class="contact-form__submit">
+                    SOUMETTRE
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="contact__info" aria-labelledby="contact-info-title">
+        <h2 id="contact-info-title" class="contact__info-title">
+            Nos coordonnées
+        </h2>
+    
+        <ul class="contact-info" role="list">
+    
+            <li class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">
+                    <img src="assets/icons/localisation-contact.svg" alt="">
+                </div>
+    
+                <div class="contact-info__content">
+                    <h3 class="contact-info__title">Emplacement</h3>
+                    <p class="contact-info__text">
+                    <a class="contact-info__link" href="">
+                        Parc près la rose
+                        25200 Montbéliard
+                    </a>
+                    </p>
+                </div>
+            </li>
+    
+            
+            <li class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">
+                    <img src="assets/icons/phone-contact.svg" alt="">
+                </div>
+    
+                <div class="contact-info__content">
+                    <h3 class="contact-info__title">Téléphone</h3>
+                    <p class="contact-info__text">
+                        <a class="contact-info__link" href="">
+                            +33&nbsp;3&nbsp;81&nbsp;99&nbsp;22&nbsp;00
+                        </a>
+                    </p>
+                </div>
+            </li>
+    
+        
+            <li class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">
+                    <img src="assets/icons/communication-contact.svg" alt="">
+                </div>
+    
+                <div class="contact-info__content">
+                    <h3 class="contact-info__title">E-mail</h3>
+                    <p class="contact-info__text">
+                        <a class="contact-info__link" href="">
+                            contact@jumelagefestival.example.com
+                        </a>
+                    </p>
+                </div>
+            </li>
+    
+        </ul>
+    </section>
+
+
+
+
+</main>
+
+<footer class="footer" aria-labelledby="footer-title">
+
+    <div class="footer__content">
+
+        <div class="footer__logo">
+            <a href="/index.html" class="footer__logo-link">
+                <img src="/assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" class="footer__logo-img">JUMELAGE
+            </a>
+        </div>
+
+        <form class="footer__newsletter" aria-label="Inscription à la newsletter">
+            <label for="newsletter-email" class="footer__newsletter-label">Votre adresse mail</label>
+            <div class="footer__newsletter-field">
+                <input id="newsletter-email" type="email" class="footer__newsletter-input"
+                    placeholder="Votre adresse mail">
+                <button class="footer__newsletter-btn">
+                    S’INSCRIRE
+                    <span class="footer__newsletter-arrow">></span>
+                </button>
+            </div>
+        </form>
+
+        <nav class="footer__menu" aria-label="Menu du footer">
+            <h3 class="footer__menu-title">Menu</h3>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="infospratique.html" class="footer__menu-link">Infos pratiques</a>
+                    |</li>
+                <li class="footer__menu-item"><a href="programme.html" class="footer__menu-link">Programme</a> |</li>
+                <li class="footer__menu-item"><a href="apropos.html" class="footer__menu-link">À propos</a> |</li>
+                <li class="footer__menu-item"><a href="artiste.html" class="footer__menu-link">Artiste</a> |</li>
+                <li class="footer__menu-item"><a href="scene.html" class="footer__menu-link">Scène</a> |</li>
+            </ul>
+        </nav>
+
+        <div class="footer__socials">
+            <h3 class="footer__socials-title">Nos réseaux</h3>
+            <ul class="footer__socials-list">
+                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_X_Light.svg"
+                            alt="X"></a></li>
+                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Facebook_Light.svg"
+                            alt="Facebook"></a>
+                </li>
+                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Instagram_Light.svg"
+                            alt="Instagram"></a>
+                </li>
+                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_TikTok_Light.svg"
+                            alt="TikTok"></a></li>
+                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_YouTube_Light.svg"
+                            alt="YouTube"></a></li>
+            </ul>
+        </div>
+
+        <ul class="footer__legal">
+            <li><a href="#" class="footer__legal-link">Mentions légales</a></li>
+            <li><a href="#" class="footer__legal-link">Politique de confidentialité</a></li>
+            <li><a href="#" class="footer__legal-link">CGU</a></li>
+        </ul>
+
+        <hr class="footer__separator">
+
+        <p class="footer__festival">JUMELAGE Festival 2026</p>
+        <p class="footer__copy">&copy; JUMELAGE</p>
+
+    </div>
+</footer>
+
+
+</body>
+
+</html>

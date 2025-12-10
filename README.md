@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : PHILIPPON
+- PRÉNOM : MELVYN
+- GROUPE : B2
+- URL du site : https://dapper-marzipan-122f12.netlify.app/
+- URL FIGMA : https://www.figma.com/design/gMWpmHowJ2okzAZ2TFEbU7/SAE105?node-id=0-1&p=f&t=sN0ew2VWZu2i4ZVP-0
 
 ## Sujet
 
