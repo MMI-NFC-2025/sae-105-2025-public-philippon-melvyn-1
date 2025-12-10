@@ -1,0 +1,27 @@
+/* Component: faq
+   BEM block: .faq
+*/
+
+.faq__list {
+    /* conteneur des questions */
+}
+
+.faq__item {
+    /* item FAQ (question + réponse) */
+}
+
+.faq__question {
+    /* bouton question (clickable pour expand/collapse) */
+}
+
+.faq__question-text {
+    /* texte de la question */
+}
+
+.faq__icon {
+    /* icône +/- */
+}
+
+.faq__answer {
+    /* conteneur de la réponse (hidden/shown dynamiquement) */
+}

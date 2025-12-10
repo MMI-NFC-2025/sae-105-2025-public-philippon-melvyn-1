@@ -13,6 +13,11 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
@@ -31,9 +36,9 @@
 
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list u-list-unstyled">
-                <a href="index.html" class="headerlogo">
-                    <img src="assets/icons/Logo (3).svg" alt="" class="headerlogo-image" aria-hidden="true">
-                    <span>Chorus Symphonia</span>
+                <a href="index.html" class="header__logo">
+                    <img src="assets/icons/Logo (3).svg" alt="" class="header__logo-image" aria-hidden="true">
+                    <span>Jumelage</span>
                 </a>
                 <li class="menu__item"><a class="menu__link" href="/programme.html">Programme</a></li>
                 <li class="menu__item"><a class="menu__link" href="/infospratique.html">Infos Pratiques</a></li>
@@ -43,249 +48,266 @@
             </ul>
         </nav>
     </header>
-<main>
+    <main>
 
-    <section class="hero">
-        <img src="/assets/img/hero_apropos.avif" class="hero__background" alt="">
-        <h1 class="hero__title--bottom">A Propos</h1>
-    </section>
+        <section class="hero">
+            <img src="/assets/img/hero_apropos.avif" class="hero__background" alt="">
+            <h1 class="hero__title--bottom">A Propos</h1>
+        </section>
 
-<section class="intro">
-    <p class="intro__text">
-        Créé en 2026, le Festival JUMELAGE voit le jour avec l’ambition de réunir publics, artistes et cultures autour d’un
-        événement musical chaleureux et accessible. Pensé par une équipe passionnée de musique live, le festival trouve
-        naturellement sa place à Montbéliard, au cœur du Parc du Pré la Rose, un lieu emblématique où nature, convivialité et
-        découverte culturelle se croisent.
-    </p>
-
-    <p class="intro__text">
-        JUMELAGE inaugure sa première édition du 28 au 30 août, avec une programmation entièrement dédiée à la musique folk, un
-        genre authentique et rassembleur. À travers ce choix artistique, le festival cherche à mettre en avant des sonorités
-        organiques, des voix sincères et des artistes qui racontent des histoires. L’objectif est clair : créer un espace
-        d’échange, de proximité et d’émotions partagées, où le public peut vivre une expérience musicale à la fois intime et
-        festive.
-    </p>
-
-    <img src="/assets/img/apropos_coulisse.avif" alt="Photo d'un concert en plein air avec un public enthousiaste" class="intro__image">
-
-
-    <p class="intro__text">
-        En s’appuyant sur son identité forte et son cadre naturel exceptionnel, le Festival JUMELAGE aspire à devenir un
-        rendez-vous incontournable dans la région. Conçu comme un lieu de rencontre et de partage, il a pour mission de
-        promouvoir la scène folk émergente, d’encourager la découverte de nouveaux talents et de renforcer les liens entre les
-        différentes communautés culturelles.
-    </p>
-
-    <p class="intro__text">
-        Avec cette première édition, JUMELAGE pose les bases d’un projet durable qui a vocation à évoluer et à s’enrichir au fil
-        des années, tout en conservant ce qui fait son essence : l’authenticité, la simplicité et la passion de la musique live.
-    </p>
-
-
-</section>
-
-
-
-
-
-<section class="team" aria-labelledby="team-title">
-    <h2 id="team-title" class="team__title">L’ÉQUIPE JUMELAGE</h2>
-
-    <div class="team__carousel">
-        <div class="team__track">
-
-            <div class="team__slide">
-                <article class="team-card">
-                    <div class="team-card__image">
-                        <img src="assets/img/organisateur_1.avif" alt="Portrait de Sofia Martel">
-                    </div>
-
-                    <div class="team-card__body">
-                        <h3 class="team-card__name">Sofia Martel</h3>
-
-                        <p class="team-card__description">
-                            Sofia s’occupe de la visibilité du festival : réseaux sociaux, presse,
-                            partenariats locaux et internationaux. Créative et dynamique, elle met
-                            tout en œuvre pour valoriser les échanges culturels et attirer un public varié.
-                        </p>
-
-                        <ul class="team-card__socials">
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--x" aria-label="X">
-                                    <img src="assets/icons/twitter-fond-bleu.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--facebook"
-                                    aria-label="Facebook">
-                                    <img src="assets/icons/facebook-fond-bleu-Gray.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--instagram"
-                                    aria-label="Instagram">
-                                    <img src="assets/icons/instagram-fond-bleu.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-
-            <div class="team__slide">
-                <article class="team-card">
-                    <div class="team-card__image">
-                        <img src="assets/img/organisateur_2.avif" alt="Portrait de Camille Lefort">
-                    </div>
-
-                    <div class="team-card__body">
-                        <h3 class="team-card__name">Camille Lefort</h3>
-
-                        <p class="team-card__description">
-                            Camille supervise l’ensemble du festival, de la planification aux relations
-                            avec les municipalités jumelées. Dotée d’un sens aigu de l’organisation,
-                            elle veille au respect de l’esprit de partage et de rencontre interculturelle.
-                        </p>
-
-                        <ul class="team-card__socials">
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--x">
-                                    <img src="assets/icons/twitter-fond-bleu.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--facebook">
-                                    <img src="assets/icons/facebook-fond-bleu-Gray.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--instagram">
-                                    <img src="assets/icons/instagram-fond-bleu.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-
-            <div class="team__slide">
-                <article class="team-card">
-                    <div class="team-card__image">
-                        <img src="assets/img/organisateur_3.avif" alt="Portrait de Lucas Moreau">
-                    </div>
-
-                    <div class="team-card__body">
-                        <h3 class="team-card__name">Lucas Moreau</h3>
-
-                        <p class="team-card__description">
-                            Lucas coordonne la logistique du festival, de la gestion des infrastructures
-                            à l’accueil des artistes et des équipes techniques.
-                        </p>
-
-                        <ul class="team-card__socials">
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--x">
-                                    <img src="assets/icons/twitter-fond-bleu.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--facebook">
-                                    <img src="assets/icons/facebook-fond-bleu-Gray.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--instagram">
-                                    <img src="assets/icons/instagram-fond-bleu.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-
-            <div class="team__slide">
-                <article class="team-card">
-                    <div class="team-card__image">
-                        <img src="assets/img/organisateur_4.avif" alt="Portrait de Thomas Lefèvre">
-                    </div>
-
-                    <div class="team-card__body">
-                        <h3 class="team-card__name">Thomas Lefèvre</h3>
-
-                        <p class="team-card__description">
-                            Thomas est en charge de la programmation artistique et des relations
-                            avec les participants internationaux.
-                        </p>
-
-                        <ul class="team-card__socials">
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--x">
-                                    <img src="assets/icons/twitter-fond-bleu.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--facebook">
-                                    <img src="assets/icons/facebook-fond-bleu-Gray.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="team-card__social-item">
-                                <a href="#" class="team-card__social-link team-card__social-link--instagram">
-                                    <img src="assets/icons/instagram-fond-bleu.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="values" aria-labelledby="values-title">
-
-    <div class="values__grid">
-
-        <article class="value">
-            <h3 class="value__title">Accessibilité</h3>
-            <p class="value__text">
-                Le Festival Jumelage s’engage à accueillir tous les publics. Nous veillons
-                à proposer des activités ouvertes à chacun, dans un cadre inclusif et facile d’accès.
+        <section class="intro">
+            <p class="intro__text">
+                Créé en 2026, le Festival JUMELAGE voit le jour avec l’ambition de réunir publics, artistes et cultures
+                autour d’un
+                événement musical chaleureux et accessible. Pensé par une équipe passionnée de musique live, le festival
+                trouve
+                naturellement sa place à Montbéliard, au cœur du Parc du Pré la Rose, un lieu emblématique où nature,
+                convivialité et
+                découverte culturelle se croisent.
             </p>
-        </article>
 
-        <article class="value">
-            <h3 class="value__title">Convivialité</h3>
-            <p class="value__text">
-                L’esprit du festival repose sur la rencontre et le partage. Un environnement
-                chaleureux où habitants, visiteurs et partenaires échangent librement.
+            <p class="intro__text">
+                JUMELAGE inaugure sa première édition du 28 au 30 août, avec une programmation entièrement dédiée à la
+                musique folk, un
+                genre authentique et rassembleur. À travers ce choix artistique, le festival cherche à mettre en avant
+                des sonorités
+                organiques, des voix sincères et des artistes qui racontent des histoires. L’objectif est clair : créer
+                un espace
+                d’échange, de proximité et d’émotions partagées, où le public peut vivre une expérience musicale à la
+                fois intime et
+                festive.
             </p>
-        </article>
 
-        <article class="value">
-            <h3 class="value__title">Esprit local</h3>
-            <p class="value__text">
-                Le festival met à l’honneur les richesses du territoire : traditions, artisans,
-                artistes et initiatives locales pour renforcer le lien entre les communautés jumelées.
+            <img src="/assets/img/apropos_coulisse.avif"
+                alt="Photo d'un concert en plein air avec un public enthousiaste" class="intro__image" loading="lazy">
+
+
+            <p class="intro__text">
+                En s’appuyant sur son identité forte et son cadre naturel exceptionnel, le Festival JUMELAGE aspire à
+                devenir un
+                rendez-vous incontournable dans la région. Conçu comme un lieu de rencontre et de partage, il a pour
+                mission de
+                promouvoir la scène folk émergente, d’encourager la découverte de nouveaux talents et de renforcer les
+                liens entre les
+                différentes communautés culturelles.
             </p>
-        </article>
 
-    </div>
-</section>
+            <p class="intro__text">
+                Avec cette première édition, JUMELAGE pose les bases d’un projet durable qui a vocation à évoluer et à
+                s’enrichir au fil
+                des années, tout en conservant ce qui fait son essence : l’authenticité, la simplicité et la passion de
+                la musique live.
+            </p>
 
-</main>
+
+        </section>
+
+
+
+
+
+        <section class="team" aria-labelledby="team-title">
+            <h2 id="team-title" class="team__title">L’ÉQUIPE JUMELAGE</h2>
+
+            <div class="team__carousel">
+                <div class="team__track">
+
+                    <div class="team__slide">
+                        <article class="team-card">
+                            <div class="team-card__image">
+                                <img src="assets/img/organisateur_1.avif" alt="Portrait de Sofia Martel" loading="lazy">
+                            </div>
+
+                            <div class="team-card__body">
+                                <h3 class="team-card__name">Sofia Martel</h3>
+
+                                <p class="team-card__description">
+                                    Sofia s’occupe de la visibilité du festival : réseaux sociaux, presse,
+                                    partenariats locaux et internationaux. Créative et dynamique, elle met
+                                    tout en œuvre pour valoriser les échanges culturels et attirer un public varié.
+                                </p>
+
+                                <ul class="team-card__socials">
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--x"
+                                            aria-label="X">
+                                            <img src="assets/icons/twitter-fond-bleu.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--facebook"
+                                            aria-label="Facebook">
+                                            <img src="assets/icons/facebook-fond-bleu-Gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--instagram"
+                                            aria-label="Instagram">
+                                            <img src="assets/icons/instagram-fond-bleu.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="team__slide">
+                        <article class="team-card">
+                            <div class="team-card__image">
+                                <img src="assets/img/organisateur_2.avif" alt="Portrait de Camille Lefort"
+                                    loading="lazy">
+                            </div>
+
+                            <div class="team-card__body">
+                                <h3 class="team-card__name">Camille Lefort</h3>
+
+                                <p class="team-card__description">
+                                    Camille supervise l’ensemble du festival, de la planification aux relations
+                                    avec les municipalités jumelées. Dotée d’un sens aigu de l’organisation,
+                                    elle veille au respect de l’esprit de partage et de rencontre interculturelle.
+                                </p>
+
+                                <ul class="team-card__socials">
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--x">
+                                            <img src="assets/icons/twitter-fond-bleu.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--facebook">
+                                            <img src="assets/icons/facebook-fond-bleu-Gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--instagram">
+                                            <img src="assets/icons/instagram-fond-bleu.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="team__slide">
+                        <article class="team-card">
+                            <div class="team-card__image">
+                                <img src="assets/img/organisateur_3.avif" alt="Portrait de Lucas Moreau" loading="lazy">
+                            </div>
+
+                            <div class="team-card__body">
+                                <h3 class="team-card__name">Lucas Moreau</h3>
+
+                                <p class="team-card__description">
+                                    Lucas coordonne la logistique du festival, de la gestion des infrastructures
+                                    à l’accueil des artistes et des équipes techniques.
+                                </p>
+
+                                <ul class="team-card__socials">
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--x">
+                                            <img src="assets/icons/twitter-fond-bleu.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--facebook">
+                                            <img src="assets/icons/facebook-fond-bleu-Gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--instagram">
+                                            <img src="assets/icons/instagram-fond-bleu.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="team__slide">
+                        <article class="team-card">
+                            <div class="team-card__image">
+                                <img src="assets/img/organisateur_4.avif" alt="Portrait de Thomas Lefèvre"
+                                    loading="lazy">
+                            </div>
+
+                            <div class="team-card__body">
+                                <h3 class="team-card__name">Thomas Lefèvre</h3>
+
+                                <p class="team-card__description">
+                                    Thomas est en charge de la programmation artistique et des relations
+                                    avec les participants internationaux.
+                                </p>
+
+                                <ul class="team-card__socials">
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--x">
+                                            <img src="assets/icons/twitter-fond-bleu.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--facebook">
+                                            <img src="assets/icons/facebook-fond-bleu-Gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__social-item">
+                                        <a href="#" class="team-card__social-link team-card__social-link--instagram">
+                                            <img src="assets/icons/instagram-fond-bleu.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="values" aria-labelledby="values-title">
+
+            <div class="values__grid">
+
+                <article class="value">
+                    <h3 class="value__title">Accessibilité</h3>
+                    <p class="value__text">
+                        Le Festival Jumelage s’engage à accueillir tous les publics. Nous veillons
+                        à proposer des activités ouvertes à chacun, dans un cadre inclusif et facile d’accès.
+                    </p>
+                </article>
+
+                <article class="value">
+                    <h3 class="value__title">Convivialité</h3>
+                    <p class="value__text">
+                        L’esprit du festival repose sur la rencontre et le partage. Un environnement
+                        chaleureux où habitants, visiteurs et partenaires échangent librement.
+                    </p>
+                </article>
+
+                <article class="value">
+                    <h3 class="value__title">Esprit local</h3>
+                    <p class="value__text">
+                        Le festival met à l’honneur les richesses du territoire : traditions, artisans,
+                        artistes et initiatives locales pour renforcer le lien entre les communautés jumelées.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
 
 
     <footer class="footer" aria-labelledby="footer-title">
-    
+
         <div class="footer__content">
-    
+
             <div class="footer__logo">
                 <a href="/index.html" class="footer__logo-link">
-                    <img src="/assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" class="footer__logo-img">JUMELAGE
+                    <img src="/assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" class="footer__logo-img"
+                        loading="lazy">JUMELAGE
                 </a>
             </div>
-    
+
             <form class="footer__newsletter" aria-label="Inscription à la newsletter">
                 <label for="newsletter-email" class="footer__newsletter-label">Votre adresse mail</label>
                 <div class="footer__newsletter-field">
@@ -297,52 +319,54 @@
                     </button>
                 </div>
             </form>
-    
+
             <nav class="footer__menu" aria-label="Menu du footer">
                 <h3 class="footer__menu-title">Menu</h3>
                 <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><a href="infospratique.html" class="footer__menu-link">Infos pratiques</a>
+                    <li class="footer__menu-item"><a href="infospratique.html" class="footer__menu-link">Infos
+                            pratiques</a>
                         |</li>
-                    <li class="footer__menu-item"><a href="programme.html" class="footer__menu-link">Programme</a> |</li>
+                    <li class="footer__menu-item"><a href="programme.html" class="footer__menu-link">Programme</a> |
+                    </li>
                     <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact</a> |</li>
                     <li class="footer__menu-item"><a href="artiste.html" class="footer__menu-link">Artiste</a> |</li>
                     <li class="footer__menu-item"><a href="scene.html" class="footer__menu-link">Scène</a> |</li>
                 </ul>
             </nav>
-    
+
             <div class="footer__socials">
                 <h3 class="footer__socials-title">Nos réseaux</h3>
                 <ul class="footer__socials-list">
                     <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_X_Light.svg"
-                                alt="X"></a></li>
+                                alt="X" loading="lazy"></a></li>
                     <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Facebook_Light.svg"
-                                alt="Facebook"></a>
+                                alt="Facebook" loading="lazy"></a>
                     </li>
-                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Instagram_Light.svg"
-                                alt="Instagram"></a>
+                    <li><a href="/" class="footer__social-link"><img
+                                src="/assets/icons/Social_Icons_Instagram_Light.svg" alt="Instagram" loading="lazy"></a>
                     </li>
                     <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_TikTok_Light.svg"
-                                alt="TikTok"></a></li>
+                                alt="TikTok" loading="lazy"></a></li>
                     <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_YouTube_Light.svg"
-                                alt="YouTube"></a></li>
+                                alt="YouTube" loading="lazy"></a></li>
                 </ul>
             </div>
-    
+
             <ul class="footer__legal">
                 <li><a href="#" class="footer__legal-link">Mentions légales</a></li>
                 <li><a href="#" class="footer__legal-link">Politique de confidentialité</a></li>
                 <li><a href="#" class="footer__legal-link">CGU</a></li>
             </ul>
-    
+
             <hr class="footer__separator">
-    
+
             <p class="footer__festival">JUMELAGE Festival 2026</p>
             <p class="footer__copy">&copy; JUMELAGE</p>
-    
+
         </div>
     </footer>
-    
-    
-    </body>
-    
-    </html>
+
+
+</body>
+
+</html>

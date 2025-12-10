@@ -1,0 +1,33 @@
+/* Component: menu-btn
+   BEM block: .menu-btn
+   Button togglé pour le menu mobile
+*/
+
+.menu-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu-btn__bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: currentColor;
+    transition: all 0.3s ease;
+}
+
+.menu-btn__bar--light {
+    /* variante : couleur claire */
+}
+
+.menu-btn__bar--top {
+    /* positionnement haut */
+}
+
+.menu-btn__bar--bottom {
+    /* positionnement bas */
+}

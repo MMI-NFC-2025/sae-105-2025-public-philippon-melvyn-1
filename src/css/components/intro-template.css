@@ -1,0 +1,15 @@
+/* Component: intro-template
+   BEM block: .intro-template
+*/
+
+.intro-template {}
+
+.intro-template__title {}
+
+.intro-template__content {}
+
+.intro-template__socials {}
+
+.intro-template__social-item {}
+
+.intro-template__social-link {}

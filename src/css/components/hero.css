@@ -1,0 +1,14 @@
+/* Component: hero
+   BEM block: .hero
+   Note: there's already a hero-about component; this file is a general hero skeleton.
+*/
+
+.hero {}
+
+.hero__background {}
+
+.hero__title {}
+
+.hero__subtitle {}
+
+.hero__cta {}

@@ -1,0 +1,118 @@
+/* Layout: section.css
+   Composants de mise en page (sections, conteneurs textes)
+   BEM blocks: .intro, .contenu, .hero, .values, .redirection, .artiste1-scene, .artists-background
+*/
+
+/* === intro === */
+.intro {
+    /* section intro texte simple */
+}
+
+.intro__text {
+    /* paragraphe intro */
+}
+
+.intro__title {
+    /* titre dans intro */
+}
+
+.intro__image {
+    /* image dans intro */
+}
+
+/* === contenu === */
+.contenu {
+    /* section contenu (utilisée dans artiste1.html, scene1.html) */
+}
+
+.contenu__text {
+    /* texte dans contenu */
+}
+
+.contenu__image {
+    /* image dans contenu */
+}
+
+/* === hero === */
+.hero {
+    /* section héro de page (image + titre) */
+}
+
+.hero__background {
+    /* image de fond du héro */
+}
+
+.hero__background--small {
+    /* variante: héro plus petite */
+}
+
+.hero__title {
+    /* grand titre du héro */
+}
+
+.hero__title--bottom {
+    /* variante: titre en bas du héro */
+}
+
+.hero__subtitle {
+    /* sous-titre (dates) */
+}
+
+.hero__cta {
+    /* call-to-action / lien dans héro */
+}
+
+.hero__btn {
+    /* bouton dans héro */
+}
+
+/* === values === */
+.values {
+    /* section des valeurs */
+}
+
+.values__grid {
+    /* grille de valeurs */
+}
+
+/* === redirection === */
+.redirection {
+    /* section avec cards de redirection (programme, scènes, infos, about) */
+}
+
+.redirection__grid {
+    /* grille des cartes redirection */
+}
+
+/* === artiste1-scene === */
+.artiste1-scene {
+    /* section de scène dans artiste1.html */
+}
+
+/* === artists-background === */
+.artists-background {
+    /* section artistes avec background dans scene1.html */
+}
+
+.artiste-background__large {
+    /* élément visuel de fond */
+}
+
+/* === pagination === */
+.pagination {
+    /* section pagination (artiste.html) */
+}
+
+.pagination__content {}
+
+.pagination__info {}
+
+.pagination__current {}
+
+.pagination__total {}
+
+.pagination__next {
+    /* lien vers page suivante */
+}
+
+.pagination__arrow {}

@@ -1,0 +1,13 @@
+/* Component: redirection-card
+   BEM block: .redirection-card
+*/
+
+.redirection-card {}
+
+.redirection-card__img {}
+
+.redirection-card__content {}
+
+.redirection-card__title {}
+
+.redirection-card__btn {}

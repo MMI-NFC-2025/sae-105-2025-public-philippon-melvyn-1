@@ -1,0 +1,75 @@
+/* Component: program
+   BEM blocks: .program-card, .program-search, .program-days, .program-download
+*/
+
+/* === program-card === */
+.program-card {
+    /* une ligne du programme (artiste, scène, heure) */
+}
+
+.program-card__artist {
+    /* colonne artiste */
+}
+
+.program-card__name {
+    /* nom de l'artiste */
+}
+
+.program-card__genre {
+    /* genre musical */
+}
+
+.program-card__scene {
+    /* colonne scène */
+}
+
+.program-card__time {
+    /* colonne horaire */
+}
+
+/* === program-search === */
+.program-search {
+    /* formulaire de recherche d'artiste */
+}
+
+.program-search__label {
+    /* label du champ */
+}
+
+.program-search__input {
+    /* champ input */
+}
+
+/* === program-days === */
+.program-days {
+    /* boutons pour filtrer par jour */
+}
+
+.program-days__button {
+    /* bouton jour (vendredi, samedi, dimanche) */
+}
+
+.program-days__button--active {
+    /* variante: jour sélectionné */
+}
+
+.program-days__add {
+    /* bouton + pour ajouter/options */
+}
+
+/* === program-download === */
+.program-download {
+    /* section pour télécharger le PDF */
+}
+
+.program-download__content {
+    /* conteneur du contenu */
+}
+
+.program-download__text {
+    /* texte du téléchargement */
+}
+
+.program-download__link {
+    /* lien/bouton de téléchargement */
+}

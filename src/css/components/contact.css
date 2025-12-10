@@ -1,0 +1,69 @@
+/* Component: contact
+   BEM blocks: .contact-form, .contact-info
+*/
+
+/* === contact-form === */
+.contact-form {
+    /* formulaire de contact */
+}
+
+.contact-form__field {
+    /* champ du formulaire */
+}
+
+.contact-form__field--textarea {
+    /* variante pour textarea */
+}
+
+.contact-form__label {
+    /* label du champ */
+}
+
+.contact-form__optional {
+    /* texte "(facultatif)" */
+}
+
+.contact-form__input {
+    /* input text/email */
+}
+
+.contact-form__textarea {
+    /* textarea */
+}
+
+.contact-form__actions {
+    /* conteneur des boutons d'action */
+}
+
+.contact-form__submit {
+    /* bouton submit */
+}
+
+/* === contact-info === */
+.contact-info {
+    /* liste des infos de contact */
+}
+
+.contact-info__item {
+    /* item (téléphone, email, adresse) */
+}
+
+.contact-info__icon {
+    /* icône de l'item */
+}
+
+.contact-info__content {
+    /* contenu texte de l'item */
+}
+
+.contact-info__title {
+    /* titre du type d'info (Téléphone, etc.) */
+}
+
+.contact-info__text {
+    /* texte de l'info */
+}
+
+.contact-info__link {
+    /* lien clickable (tel:, mailto:, http) */
+}

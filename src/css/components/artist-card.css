@@ -1,0 +1,19 @@
+/* Component: artist-card
+   BEM block: .artist-card
+*/
+
+.artist-card {
+    /* wrapper for an artist card */
+}
+
+.artist-card__img {
+    /* image / thumbnail */
+}
+
+.artist-card__content {
+    /* textual content */
+}
+
+.artist-card__title {}
+
+.artist-card__meta {}

@@ -1,0 +1,48 @@
+/* Component: team-card
+   BEM block: .team-card
+   Carte d'équipe avec image, nom, description, socials
+*/
+
+.team-card {
+    /* conteneur pour une fiche de l'équipe */
+}
+
+.team-card__image {
+    /* conteneur image */
+}
+
+.team-card__body {
+    /* conteneur texte et socials */
+}
+
+.team-card__name {
+    /* nom du membre */
+}
+
+.team-card__description {
+    /* description biographique */
+}
+
+.team-card__socials {
+    /* liste de liens sociales */
+}
+
+.team-card__social-item {
+    /* item dans la liste socials */
+}
+
+.team-card__social-link {
+    /* lien social */
+}
+
+.team-card__social-link--x {
+    /* variante X */
+}
+
+.team-card__social-link--facebook {
+    /* variante Facebook */
+}
+
+.team-card__social-link--instagram {
+    /* variante Instagram */
+}

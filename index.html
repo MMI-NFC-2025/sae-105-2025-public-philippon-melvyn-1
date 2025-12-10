@@ -13,306 +13,355 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
 </head>
 
 <body>
-<header class="header">
-<a class="header__link" href="/">
-    <img src="assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" />
-</a>
-<button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-    <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
-    <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
-    <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
-</button>
-
-<nav class="header__menu menu" id="mainNav" aria-hidden="true">
-    <ul class="menu__list u-list-unstyled">
-        <a href="index.html" class="headerlogo">
-            <img src="assets/icons/Logo (3).svg" alt="" class="headerlogo-image" aria-hidden="true">
-            <span>Chorus Symphonia</span>
+    <header class="header">
+        <a class="header__link" href="/">
+            <img src="assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" />
         </a>
-        <li class="menu__item"><a class="menu__link" href="/programme.html">Programme</a></li>
-        <li class="menu__item"><a class="menu__link" href="/infospratique.html">Infos Pratiques</a></li>
-        <li class="menu__item"><a class="menu__link" href="/apropos.html">À Propos</a></li>
-        <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
-        <li class="menu__item"><a class="menu__link" href="/artiste.html">Artiste collection</a></li>
-        <li class="menu__item"><a class="menu__link" href="/scene.html">4 Scene</a></li>
-    </ul>
-</nav>
-</header>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
+        </button>
 
-<!-- Section intro -->
-<main>
-<!-- HERO -->
-<section class="hero">
-    <img src="/assets/img/hero_accueil.avif" class="hero__background" alt="">
-    <h1 class="hero__title">JUMELAGE Édition 2026</h1>
-    <p class="hero__subtitle">28 AOÛT – 30 AOÛT</p>
-    <a href="/404" class="hero__btn">BILLETTERIE</a>
-</section>
-
-
-<section class="intro">
-    <p class="intro__text">
-        Le Festival Jumelage célèbre les rencontres entre cultures et territoires.
-        Une édition conviviale, accessible à tous, où l’esprit local prend vie à travers
-        des animations, des découvertes et des échanges uniques.
-    </p>
-
-    <h2 class="intro__title">Au rendez-vous de cette édition 2026</h2>
-</section>
-
-
-<section class="artists" aria-labelledby="artists-title">
-    <h2 id="artists-title" class="artists__title u-hidden">Artistes</h2>
-
-    <div class="artists__list">
-
-        
-        <article class="artist-card">
-            <div class="artist-card__img">
-                <img src="/assets/img/artiste_1.avif" alt="Portrait de l'artiste Carley Jener">
-            </div>
-
-            <div class="artist-card__content">
-                <p class="artist-card__name">Carley Jener</p>
-                <p class="artist-card__date">Vendredi 28 août</p>
-            </div>
-
-            <a href="#" class="artist-card__btn">EN SAVOIR PLUS <span class="artist-card__arrow">›</span></a>
-        </article>
-
-        
-        <article class="artist-card">
-            <div class="artist-card__img">
-                <img src="/assets/img/artiste_2.avif" alt="Portrait de l'artiste Kira Montrel">
-            </div>
-
-            <div class="artist-card__content">
-                <p class="artist-card__name">Kira Montrel</p>
-                <p class="artist-card__date">Vendredi 28 août</p>
-            </div>
-
-            <a href="#" class="artist-card__btn">EN SAVOIR PLUS <span class="artist-card__arrow">›</span></a>
-        </article>
-
-        
-        <article class="artist-card">
-            <div class="artist-card__img">
-                <img src="/assets/img/artiste_3.avif" alt="Portrait de l'artiste Orion Trellian">
-            </div>
-
-            <div class="artist-card__content">
-                <p class="artist-card__name">Orion Trellian</p>
-                <p class="artist-card__date">Vendredi 28 août</p>
-            </div>
-
-            <a href="#" class="artist-card__btn">EN SAVOIR PLUS <span class="artist-card__arrow">›</span></a>
-        </article>
-
-        
-        <article class="artist-card">
-            <div class="artist-card__img">
-                <img src="/assets/img/artiste_4.avif" alt="Portrait de l'artiste Eden Kaloris">
-            </div>
-
-            <div class="artist-card__content">
-                <p class="artist-card__name">Eden Kaloris</p>
-                <p class="artist-card__date">Vendredi 28 août</p>
-            </div>
-
-            <a href="#" class="artist-card__btn">EN SAVOIR PLUS <span class="artist-card__arrow">›</span></a>
-        </article>
-
-    </div>
-
-    
-    <div class="artists__more">
-        <p class="artists__more--text">Et bien d’autres encore</p>
-        <a href="#" class="artists__more--btn">EN SAVOIR PLUS <span class="artists__more-arrow">›</span></a>
-    </div>
-</section>
-
-
-<section class="values" aria-labelledby="values-title">
-
-    <div class="values__grid">
-
-        <article class="value">
-            <h3 class="value__title">Accessibilité</h3>
-            <p class="value__text">
-                Le Festival Jumelage s’engage à accueillir tous les publics. Nous veillons
-                à proposer des activités ouvertes à chacun, dans un cadre inclusif et facile d’accès.
-            </p>
-        </article>
-
-        <article class="value">
-            <h3 class="value__title">Convivialité</h3>
-            <p class="value__text">
-                L’esprit du festival repose sur la rencontre et le partage. Un environnement
-                chaleureux où habitants, visiteurs et partenaires échangent librement.
-            </p>
-        </article>
-
-        <article class="value">
-            <h3 class="value__title">Esprit local</h3>
-            <p class="value__text">
-                Le festival met à l’honneur les richesses du territoire : traditions, artisans,
-                artistes et initiatives locales pour renforcer le lien entre les communautés jumelées.
-            </p>
-        </article>
-
-    </div>
-</section>
-<section class="redirection" aria-labelledby="redirection-title">
-
-    <div class="redirection__grid">
-
-        
-        <div class="redirection-card redirection-card--scenes">
-                <div class="redirection-card__img">
-                    <img src="assets/img/hero_4scene.avif" alt="">
-                </div>
-        
-
-            <div class="redirection-card__content">
-                <h3 class="redirection-card__title">Nos scènes</h3>
-                <p class="redirection-card__text">
-                    Découvrez toutes nos scènes et leurs infos essentielles pour ne rien manquer des temps forts du
-                    festival.
-                </p>
-                <a href="/scene.html" class="redirection-card__btn">
-                    EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list u-list-unstyled">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/icons/Logo (3).svg" alt="" class="header__logo-image" aria-hidden="true">
+                    <span>JUMELAGE</span>
                 </a>
-            </div>
-        </div>
-
-
-        <div class="redirection-card redirection-card--program">
-                <div class="redirection-card__img">
-                    <img src="assets/img/hero_programme.avif" alt="">
-                </div>
-
-
-            <div class="redirection-card__content">
-                <h3 class="redirection-card__title">Programme</h3>
-                <p class="redirection-card__text">
-                    Explorez l’ensemble de notre programmation et retrouvez toutes les infos clés pour profiter
-                    pleinement du festival.
-                </p>
-                <a href="/programme.html" class="redirection-card__btn">
-                    EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
-                </a>
-            </div>
-        </div>
-
-        
-        <div class="redirection-card redirection-card--infos">
-                <div class="redirection-card__img">
-                    <img src="assets/img/hero_infos_pratiques.avif" alt="">
-                </div>
-          
-
-            <div class="redirection-card__content">
-                <h3 class="redirection-card__title">Infos pratiques</h3>
-                <p class="redirection-card__text">
-                    Retrouvez toutes les informations essentielles pour préparer votre visite.
-                </p>
-                <a href="/infospratique.html" class="redirection-card__btn">
-                    EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
-                </a>
-            </div>
-        </div>
-
-        
-        <div class="redirection-card redirection-card--about">
-                <div class="redirection-card__img">
-                    <img src="assets/img/hero_apropos.avif" alt="">
-                </div>
-
-            <div class="redirection-card__content">
-                <h3 class="redirection-card__title">À propos</h3>
-                <p class="redirection-card__text">
-                    Découvrez l’histoire, les valeurs et la vision du Festival Jumelage, et rencontrez l’équipe qui rend
-                    cet événement unique.
-                </p>
-                <a href="/apropos.html" class="redirection-card__btn">
-                    EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-</main>
-
-<footer class="footer" aria-labelledby="footer-title">
-
-    <div class="footer__content">
-
-        <div class="footer__logo">
-            <a href="/index.html" class="footer__logo-link">
-                <img src="/assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" class="footer__logo-img">JUMELAGE
-            </a>
-        </div>
-
-        <form class="footer__newsletter" aria-label="Inscription à la newsletter">
-            <label for="newsletter-email" class="footer__newsletter-label">Votre adresse mail</label>
-            <div class="footer__newsletter-field">
-                <input id="newsletter-email" type="email" class="footer__newsletter-input"
-                    placeholder="Votre adresse mail">
-                <button class="footer__newsletter-btn">
-                    S’INSCRIRE
-                    <span class="footer__newsletter-arrow">></span>
-                </button>
-            </div>
-        </form>
-
-        <nav class="footer__menu" aria-label="Menu du footer">
-            <h3 class="footer__menu-title">Menu</h3>
-            <ul class="footer__menu-list">
-                <li class="footer__menu-item"><a href="infospratique.html" class="footer__menu-link">Infos pratiques</a> |</li>
-                <li class="footer__menu-item"><a href="programme.html" class="footer__menu-link">Programme</a> |</li>
-                <li class="footer__menu-item"><a href="apropos.html" class="footer__menu-link">À propos</a> |</li>
-                <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact</a> |</li>
-                <li class="footer__menu-item"><a href="artiste.html" class="footer__menu-link">Artiste</a> |</li>
-                <li class="footer__menu-item"><a href="scene.html" class="footer__menu-link">Scène</a> |</li>
+                <li class="menu__item"><a class="menu__link" href="/programme.html">Programme</a></li>
+                <li class="menu__item"><a class="menu__link" href="/infospratique.html">Infos Pratiques</a></li>
+                <li class="menu__item"><a class="menu__link" href="/apropos.html">À Propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="/artiste.html">Artiste collection</a></li>
+                <li class="menu__item"><a class="menu__link" href="/scene.html">4 Scene</a></li>
             </ul>
         </nav>
+    </header>
 
-        <div class="footer__socials">
-            <h3 class="footer__socials-title">Nos réseaux</h3>
-            <ul class="footer__socials-list">
-                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_X_Light.svg" alt="X"></a></li>
-                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Facebook_Light.svg" alt="Facebook"></a>
-                </li>
-                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Instagram_Light.svg" alt="Instagram"></a>
-                </li>
-                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_TikTok_Light.svg" alt="TikTok"></a></li>
-                <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_YouTube_Light.svg" alt="YouTube"></a></li>
+    <main>
+        <section class="hero">
+            <img src="/assets/img/hero_accueil.avif" class="hero__background" alt="">
+            <h1 class="hero__title">JUMELAGE Édition 2026</h1>
+            <p class="hero__subtitle">28 AOÛT – 30 AOÛT</p>
+            <a href="/404" class="hero__btn">BILLETTERIE</a>
+        </section>
+
+
+        <section class="intro">
+            <p class="intro__text">
+                Le Festival Jumelage célèbre les rencontres entre cultures et territoires.
+                Une édition conviviale, accessible à tous, où l’esprit local prend vie à travers
+                des animations, des découvertes et des échanges uniques.
+            </p>
+
+            <h2 class="intro__title">Au rendez-vous de cette édition 2026</h2>
+        </section>
+
+
+        <section class="artists" aria-labelledby="artists-title">
+            <h2 id="artists-title" class="artists__title u-hidden">Artistes</h2>
+
+            <div class="artists__list">
+
+
+                <article class="artist-card">
+                    <div class="artist-card__img">
+                        <img src="/assets/img/artiste_1.avif" alt="Portrait de l'artiste Carley Jener" loading="lazy">
+                    </div>
+
+                    <div class="artist-card__content">
+                        <p class="artist-card__name">Carley Jener</p>
+                        <p class="artist-card__date">Vendredi 28 août</p>
+                    </div>
+
+                    <a href="artiste1.html" class="artist-card__btn">EN SAVOIR PLUS <span
+                            class="artist-card__arrow">›</span></a>
+                </article>
+
+
+                <article class="artist-card">
+                    <div class="artist-card__img">
+                        <img src="/assets/img/artiste_2.avif" alt="Portrait de l'artiste Kira Montrel" loading="lazy">
+                    </div>
+
+                    <div class="artist-card__content">
+                        <p class="artist-card__name">Kira Montrel</p>
+                        <p class="artist-card__date">Vendredi 28 août</p>
+                    </div>
+
+                    <a href="artiste2.html" class="artist-card__btn">EN SAVOIR PLUS <span
+                            class="artist-card__arrow">›</span></a>
+                </article>
+
+
+                <article class="artist-card">
+                    <div class="artist-card__img">
+                        <img src="/assets/img/artiste_3.avif" alt="Portrait de l'artiste Orion Trellian" loading="lazy">
+                    </div>
+
+                    <div class="artist-card__content">
+                        <p class="artist-card__name">Orion Trellian</p>
+                        <p class="artist-card__date">Vendredi 28 août</p>
+                    </div>
+
+                    <a href="artiste3.html" class="artist-card__btn">EN SAVOIR PLUS <span
+                            class="artist-card__arrow">›</span></a>
+                </article>
+
+
+                <article class="artist-card">
+                    <div class="artist-card__img">
+                        <img src="/assets/img/artiste_4.avif" alt="Portrait de l'artiste Eden Kaloris" loading="lazy">
+                    </div>
+
+                    <div class="artist-card__content">
+                        <p class="artist-card__name">Eden Kaloris</p>
+                        <p class="artist-card__date">Vendredi 28 août</p>
+                    </div>
+
+                    <a href="artiste4.html" class="artist-card__btn">EN SAVOIR PLUS <span
+                            class="artist-card__arrow">›</span></a>
+                </article>
+
+            </div>
+
+
+            <div class="artists__more">
+                <p class="artists__more-text">Et bien d’autres encore</p>
+                <a href="/artiste.html" class="artists__more-btn">EN SAVOIR PLUS <span
+                        class="artists__more-arrow">›</span></a>
+            </div>
+        </section>
+
+
+        <section class="values" aria-labelledby="values-title">
+
+            <div class="values__grid">
+
+                <article class="value">
+                    <h3 class="value__title">Accessibilité</h3>
+                    <p class="value__text">
+                        Le Festival Jumelage s’engage à accueillir tous les publics. Nous veillons
+                        à proposer des activités ouvertes à chacun, dans un cadre inclusif et facile d’accès.
+                    </p>
+                </article>
+
+                <article class="value">
+                    <h3 class="value__title">Convivialité</h3>
+                    <p class="value__text">
+                        L’esprit du festival repose sur la rencontre et le partage. Un environnement
+                        chaleureux où habitants, visiteurs et partenaires échangent librement.
+                    </p>
+                </article>
+
+                <article class="value">
+                    <h3 class="value__title">Esprit local</h3>
+                    <p class="value__text">
+                        Le festival met à l’honneur les richesses du territoire : traditions, artisans,
+                        artistes et initiatives locales pour renforcer le lien entre les communautés jumelées.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+        <section class="redirection" aria-labelledby="redirection-title">
+
+            <div class="redirection__grid">
+
+
+                <div class="redirection-card redirection-card--scenes">
+                    <div class="redirection-card__img">
+                        <img src="assets/img/hero_4scene.avif" alt="" loading="lazy">
+                    </div>
+
+
+                    <div class="redirection-card__content">
+                        <h3 class="redirection-card__title">Nos scènes</h3>
+                        <p class="redirection-card__text">
+                            Découvrez toutes nos scènes et leurs infos essentielles pour ne rien manquer des temps forts
+                            du
+                            <a href="index.html" class="header__logo">
+                                <img src="assets/icons/Logo (3).svg" alt="" class="header__logo-image"
+                                    aria-hidden="true">
+                                <a href="/scene.html" class="redirection-card__btn">
+                                    EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
+                                </a>
+                    </div>
+                </div>
+
+
+                <div class="redirection-card redirection-card--program">
+                    <div class="redirection-card__img">
+                        <img src="assets/img/hero_programme.avif" alt="" loading="lazy">
+                    </div>
+
+
+                    <div class="redirection-card__content">
+                        <h3 class="redirection-card__title">Programme</h3>
+                        <p class="redirection-card__text">
+                            Explorez l’ensemble de notre programmation et retrouvez toutes les infos clés pour profiter
+                            pleinement du festival.
+                        </p>
+                        <a href="/programme.html" class="redirection-card__btn">
+                            EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="redirection-card redirection-card--infos">
+                    <div class="redirection-card__img">
+                        <img src="assets/img/hero_infos_pratiques.avif" alt="" loading="lazy">
+                    </div>
+
+
+                    <div class="redirection-card__content">
+                        <h3 class="redirection-card__title">Infos pratiques</h3>
+                        <p class="redirection-card__text">
+                            Retrouvez toutes les informations essentielles pour préparer votre visite.
+                        </p>
+                        <a href="/infospratique.html" class="redirection-card__btn">
+                            EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="redirection-card redirection-card--about">
+                    <div class="redirection-card__img">
+                        <img src="assets/img/hero_apropos.avif" alt="" loading="lazy">
+                    </div>
+
+                    <div class="redirection-card__content">
+                        <h3 class="redirection-card__title">À propos</h3>
+                        <p class="redirection-card__text">
+                            Découvrez l’histoire, les valeurs et la vision du Festival Jumelage, et rencontrez l’équipe
+                            qui rend
+                            cet événement unique.
+                        </p>
+                        <a href="/apropos.html" class="redirection-card__btn">
+                            EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="partenaires-carousel">
+            <div class="partenaires-carousel__track">
+                <h2 id="partenaires-carousel" class="partenaires-carousel__title u-hidden">Ils font vivre le festival
+                </h2>
+
+                <div class="partenaires-carousel__slide">
+                    <img src="/assets/img/partenaire_1.avif" alt="" class="partenaires-carousel__img" loading="lazy">
+                </div>
+
+                <div class="partenaires-carousel__slide">
+                    <img src="/assets/img/partenaire_2.avif" alt="" class="partenaires-carousel__img" loading="lazy">
+                </div>
+
+                <div class="partenaires-carousel__slide">
+                    <img src="/assets/img/partenaire_3.avif" alt="" class="partenaires-carousel__img" loading="lazy">
+                </div>
+
+                <div class="partenaires-carousel__slide">
+                    <img src="/assets/img/partenaire_4.avif" alt="" class="partenaires-carousel__img" loading="lazy">
+                </div>
+
+                <div class="partenaires-carousel__slide">
+                    <img src="/assets/img/partenaire_5.avif" alt="" class="partenaires-carousel__img" loading="lazy">
+                </div>
+
+                <div class="partenaires-carousel__slide">
+                    <img src="/assets/img/partenaire_6.avif" alt="" class="partenaires-carousel__img" loading="lazy">
+                </div>
+                <p class="artists__more-text">Et bien d’autres encore</p>
+                <a href="/artiste.html" class="artists__more-btn">EN SAVOIR PLUS <span
+                        class="artists__more-arrow">›</span></a>
+
+    </main>
+
+    <footer class="footer" aria-labelledby="footer-title">
+
+        <div class="footer__content">
+
+            <div class="footer__logo">
+                <a href="/index.html" class="footer__logo-link">
+                    <img src="/assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" class="footer__logo-img"
+                        loading="lazy">JUMELAGE
+                </a>
+            </div>
+
+            <form class="footer__newsletter" aria-label="Inscription à la newsletter">
+                <label for="newsletter-email" class="footer__newsletter-label">Votre adresse mail</label>
+                <div class="footer__newsletter-field">
+                    <input id="newsletter-email" type="email" class="footer__newsletter-input"
+                        placeholder="Votre adresse mail">
+                    <button class="footer__newsletter-btn">
+                        S’INSCRIRE
+                        <span class="footer__newsletter-arrow">></span>
+                    </button>
+                </div>
+            </form>
+
+            <nav class="footer__menu" aria-label="Menu du footer">
+                <h3 class="footer__menu-title">Menu</h3>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="infospratique.html" class="footer__menu-link">Infos
+                            pratiques</a> |</li>
+                    <li class="footer__menu-item"><a href="programme.html" class="footer__menu-link">Programme</a> |
+                    </li>
+                    <li class="footer__menu-item"><a href="apropos.html" class="footer__menu-link">À propos</a> |</li>
+                    <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact</a> |</li>
+                    <li class="footer__menu-item"><a href="artiste.html" class="footer__menu-link">Artiste</a> |</li>
+                    <li class="footer__menu-item"><a href="scene.html" class="footer__menu-link">Scène</a> |</li>
+                </ul>
+            </nav>
+
+            <div class="footer__socials">
+                <h3 class="footer__socials-title">Nos réseaux</h3>
+                <ul class="footer__socials-list">
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_X_Light.svg"
+                                alt="X" loading="lazy"></a></li>
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Facebook_Light.svg"
+                                alt="Facebook" loading="lazy"></a>
+                    </li>
+                    <li><a href="/" class="footer__social-link"><img
+                                src="/assets/icons/Social_Icons_Instagram_Light.svg" alt="Instagram" loading="lazy"></a>
+                    </li>
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_TikTok_Light.svg"
+                                alt="TikTok" loading="lazy"></a></li>
+                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_YouTube_Light.svg"
+                                alt="YouTube" loading="lazy"></a></li>
+                </ul>
+            </div>
+
+            <ul class="footer__legal">
+                <li><a href="#" class="footer__legal-link">Mentions légales</a></li>
+                <li><a href="#" class="footer__legal-link">Politique de confidentialité</a></li>
+                <li><a href="#" class="footer__legal-link">CGU</a></li>
             </ul>
+
+            <hr class="footer__separator">
+
+            <p class="footer__festival">JUMELAGE Festival 2026</p>
+            <p class="footer__copy">&copy; JUMELAGE</p>
+
         </div>
-
-        <ul class="footer__legal">
-            <li><a href="#" class="footer__legal-link">Mentions légales</a></li>
-            <li><a href="#" class="footer__legal-link">Politique de confidentialité</a></li>
-            <li><a href="#" class="footer__legal-link">CGU</a></li>
-        </ul>
-
-        <hr class="footer__separator">
-
-        <p class="footer__festival">JUMELAGE Festival 2026</p>
-        <p class="footer__copy">&copy; JUMELAGE</p>
-
-    </div>
-</footer>
+    </footer>
 
 
 </body>
+
 </html>

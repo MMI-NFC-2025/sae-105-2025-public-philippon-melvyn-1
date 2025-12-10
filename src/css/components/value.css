@@ -1,0 +1,16 @@
+/* Component: value
+   BEM block: .value
+   Carte de valeur (avec titre et texte)
+*/
+
+.value {
+    /* conteneur pour une valeur/principe */
+}
+
+.value__title {
+    /* titre de la valeur */
+}
+
+.value__text {
+    /* contenu texte de la valeur */
+}

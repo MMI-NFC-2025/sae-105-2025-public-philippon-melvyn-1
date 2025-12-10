@@ -13,6 +13,9 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
@@ -31,9 +34,9 @@
 
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list u-list-unstyled">
-                <a href="index.html" class="headerlogo">
-                    <img src="assets/icons/Logo (3).svg" alt="" class="headerlogo-image" aria-hidden="true">
-                    <span>Chorus Symphonia</span>
+                <a href="index.html" class="header__logo">
+                    <img src="assets/icons/Logo (3).svg" alt="" class="header__logo-image" aria-hidden="true">
+                    <span>JUMELAGE</span>
                 </a>
                 <li class="menu__item"><a class="menu__link" href="/programme.html">Programme</a></li>
                 <li class="menu__item"><a class="menu__link" href="/apropos.html">À Propos</a></li>
@@ -44,26 +47,197 @@
         </nav>
     </header>
 
-<main>
+    <main>
 
-    <section class="hero">
-        <img src="/assets/img/hero_infos_pratiques.avif" class="hero__background" alt="">
-        <h1 class="hero__title--bottom">Infos Pratiques</h1>
-    </section>
+        <section class="hero">
+            <img src="/assets/img/hero_infos_pratiques.avif" class="hero__background" alt="">
+            <h1 class="hero__title--bottom">Infos Pratiques</h1>
 
-</main>
+        </section>
+
+        <section class="infos-pratiques__tarifs" aria-labelledby="tarifs-title">
+            <h2 id="tarifs-title" class="infos-pratiques__title">Tarifs</h2>
+
+            <div class="tarifs__list">
+
+                <article class="tarifs__card" aria-label="Pass Journée">
+                    <h3 class="tarifs__card-title">Pass Journée</h3>
+                    <p class="tarifs__price">
+                        <span class="tarifs__amount">8</span>
+                        <span class="tarifs__currency" aria-hidden="true">€</span>
+                        <span class="sr-only">euros</span>
+                    </p>
+                </article>
+
+                <article class="tarifs__card" aria-label="Pass Week-end">
+                    <h3 class="tarifs__card-title">Pass Week-end</h3>
+                    <p class="tarifs__price">
+                        <span class="tarifs__amount">14</span>
+                        <span class="tarifs__currency" aria-hidden="true">€</span>
+                        <span class="sr-only">euros</span>
+                    </p>
+                </article>
+
+                <article class="tarifs__card" aria-label="Tarif réduit étudiants et plus de 65 ans">
+                    <h3 class="tarifs__card-title">
+                        Tarif réduit<br>
+                        <span class="tarifs__card-subtitle">(étudiants, +65 ans)</span>
+                    </h3>
+                    <p class="tarifs__price">
+                        <span class="tarifs__amount">6</span>
+                        <span class="tarifs__currency" aria-hidden="true">€</span>
+                        <span class="sr-only">euros</span>
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="tarifs__info--background">
+                <p class="tarifs__free">
+                    Entrée gratuite pour les moins de 12 ans
+                </p>
+            </div>
+
+        </section>
+        <section class="localisation">
+            <article class="localisation__info">
+                <h3 class="localisation__title">Hébergements</h3>
+                <p class="localisation__text">
+                    Hôtel Le Bourg Fleuri – à 5 min du site, chambres à partir de 65 €/nuit
+                </p>
+                <p class="localisation__text">
+                    Auberge du Pont – hébergement convivial, dès 40 €/nuit
+                </p>
+                <p class="localisation__text">
+                    Camping des Rivières – emplacements tentes et vans, 12 €/nuit
+                </p>
+                <p class="localisation__text">
+                    Aire de camping-car – parking aménagé à proximité du festival
+                </p>
+            </article>
+
+            <img src="/assets/img/map.avif" alt="" class="localisation__image" loading="lazy">
+
+        </section>
+
+        <section class="infos-pratiques__transport" aria-labelledby="transport-title">
+            <h2 id="transport-title" class="infos-pratiques__title">Transport</h2>
+
+            <div class="transport__list">
+
+
+                <article class="transport__card" aria-label="Navette gratuite">
+                    <figure class="transport__media">
+                        <img src="assets/img/bus_infos_pratiques.avif" alt="Navette gratuite du festival"
+                            class="transport__image" loading="lazy">
+                    </figure>
+
+                    <p class="transport__description">
+                        <strong>Navette gratuite :</strong> Toutes les 20 minutes depuis la gare jusqu’au site du
+                        festival
+                    </p>
+                </article>
+
+
+                <article class="transport__card" aria-label="Accès en train">
+                    <figure class="transport__media">
+                        <img src="assets/img/train_infos_pratiques.avif" alt="Train à quai avec un voyageur qui descend"
+                            class="transport__image" loading="lazy">
+                    </figure>
+
+                    <p class="transport__description">
+                        <strong>En train :</strong> Gare de Montreval à 10 minutes à pied du site
+                    </p>
+                </article>
+
+                <article class="transport__card" aria-label="Covoiturage">
+                    <figure class="transport__media">
+                        <img src="assets/img/covoiturage_infos_pratiques.avif"
+                            alt="Groupe de personnes souriantes dans une voiture" class="transport__image"
+                            loading="lazy">
+                    </figure>
+
+                    <p class="transport__description">
+                        <strong>Covoiturage :</strong> Plateforme locale disponible (Zone de départ : Parking du Stade)
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="infos-pratiques__faq" aria-labelledby="faq-title">
+            <h2 id="faq-title" class="infos-pratiques__title">FAQ</h2>
+
+            <div class="faq__list">
+
+                <article class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">Les animaux sont-ils autorisés ?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>
+                            Les animaux ne sont pas autorisés sur le site du festival, sauf pour les chiens
+                            d’assistance.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">Puis-je entrer et sortir librement du festival ?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>
+                            Oui, les sorties et entrées sont autorisées sous présentation d’un bracelet valide.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">Y a-t-il des espaces de restauration ?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>
+                            Oui, plusieurs stands de restauration sont disponibles sur l’ensemble du site.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">
+                            Le festival est-il accessible aux personnes à mobilité réduite ?
+                        </span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>
+                            Oui, des rampes et espaces réservés sont aménagés.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
 
 
     <footer class="footer" aria-labelledby="footer-title">
-    
+
         <div class="footer__content">
-    
+
             <div class="footer__logo">
                 <a href="/index.html" class="footer__logo-link">
-                    <img src="/assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" class="footer__logo-img">JUMELAGE
+                    <img src="/assets/icons/Logo (3).svg" alt="Logo du festival Jumelage" class="footer__logo-img"
+                        loading="lazy">JUMELAGE
                 </a>
             </div>
-    
+
             <form class="footer__newsletter" aria-label="Inscription à la newsletter">
                 <label for="newsletter-email" class="footer__newsletter-label">Votre adresse mail</label>
                 <div class="footer__newsletter-field">
@@ -75,51 +249,52 @@
                     </button>
                 </div>
             </form>
-    
+
             <nav class="footer__menu" aria-label="Menu du footer">
                 <h3 class="footer__menu-title">Menu</h3>
                 <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><a href="programme.html" class="footer__menu-link">Programme</a> |</li>
+                    <li class="footer__menu-item"><a href="programme.html" class="footer__menu-link">Programme</a> |
+                    </li>
                     <li class="footer__menu-item"><a href="apropos.html" class="footer__menu-link">À propos</a> |</li>
                     <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact</a> |</li>
                     <li class="footer__menu-item"><a href="artiste.html" class="footer__menu-link">Artiste</a> |</li>
                     <li class="footer__menu-item"><a href="scene.html" class="footer__menu-link">Scène</a> |</li>
                 </ul>
             </nav>
-    
+
             <div class="footer__socials">
                 <h3 class="footer__socials-title">Nos réseaux</h3>
                 <ul class="footer__socials-list">
                     <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_X_Light.svg"
-                                alt="X"></a></li>
+                                alt="X" loading="lazy"></a></li>
                     <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Facebook_Light.svg"
-                                alt="Facebook"></a>
+                                alt="Facebook" loading="lazy"></a>
                     </li>
-                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_Instagram_Light.svg"
-                                alt="Instagram"></a>
+                    <li><a href="/" class="footer__social-link"><img
+                                src="/assets/icons/Social_Icons_Instagram_Light.svg" alt="Instagram" loading="lazy"></a>
                     </li>
                     <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_TikTok_Light.svg"
-                                alt="TikTok"></a></li>
+                                alt="TikTok" loading="lazy"></a></li>
                     <li><a href="/" class="footer__social-link"><img src="/assets/icons/Social_Icons_YouTube_Light.svg"
-                                alt="YouTube"></a></li>
+                                alt="YouTube" loading="lazy"></a></li>
                 </ul>
             </div>
-    
+
             <ul class="footer__legal">
                 <li><a href="#" class="footer__legal-link">Mentions légales</a></li>
                 <li><a href="#" class="footer__legal-link">Politique de confidentialité</a></li>
                 <li><a href="#" class="footer__legal-link">CGU</a></li>
             </ul>
-    
+
             <hr class="footer__separator">
-    
+
             <p class="footer__festival">JUMELAGE Festival 2026</p>
             <p class="footer__copy">&copy; JUMELAGE</p>
-    
+
         </div>
     </footer>
-    
-    
-    </body>
-    
-    </html>
+
+
+</body>
+
+</html>

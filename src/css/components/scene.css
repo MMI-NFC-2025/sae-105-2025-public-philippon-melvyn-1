@@ -1,0 +1,15 @@
+/* Component: scene
+   BEM block: .scene and .scene-card
+*/
+
+.scene {}
+
+.scene__list {}
+
+.scene-card {}
+
+.scene-card__img {}
+
+.scene-card__content {}
+
+.scene-card__meta {}

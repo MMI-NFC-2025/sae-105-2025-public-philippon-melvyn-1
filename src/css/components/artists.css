@@ -1,0 +1,27 @@
+/* Component: artists
+   BEM block: .artists
+*/
+
+.artists {
+    /* layout for the artists block */
+}
+
+.artists__list {
+    /* container for artist items */
+}
+
+.artists__item {
+    /* single artist item */
+}
+
+.artists__more {
+    /* area for the "voir plus" button/text */
+}
+
+.artists__more-text {
+    /* text inside the more area */
+}
+
+.artists__more-btn {
+    /* button inside the more area */
+}
