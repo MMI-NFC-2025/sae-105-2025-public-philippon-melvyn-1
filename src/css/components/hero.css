@@ -1,109 +1,105 @@
-/* Component: hero
-    BEM block: .hero
-    Full-bleed hero used on homepage. Matches Figma: large Kanit headings, centered, white on image.
-*/
-
 .hero {
     position: relative;
+    height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    min-height: 70vh;
     color: var(--color-light);
+    overflow: hidden;
 }
 
 .hero__background {
     position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: 0;
-    pointer-events: none;
 }
 
-/* subtle dark overlay to ensure text contrast on bright photos */
-.hero__background::after {
+.hero__background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::after {
     content: "";
     position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.18) 10%, rgba(0, 0, 0, 0.45) 60%);
-    z-index: 1;
-    pointer-events: none;
-}
-
-.hero__inner {
-    position: relative;
-    z-index: 20;
-    /* ensure content sits above background and its overlay */
-    padding: 3rem 1.25rem;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 1100px;
+    height: 100%;
+    background: var(--color-primary-500);
+    opacity: 0.25;
+    z-index: 1;
 }
 
 .hero__title {
+    position: relative;
+    z-index: 30;
     font-family: var(--font-family-kanit);
     font-weight: 600;
     font-size: var(--font-size-60);
-    line-height: 1.05;
+    line-height: 1.1;
     margin: 0 0 1rem 0;
     text-transform: uppercase;
-}
-
-.hero__title,
-.hero__subtitle,
-.hero__dates,
-.hero__cta {
-    position: relative;
-    z-index: 25;
-    /* above background overlay */
+    letter-spacing: -0.02em;
+    color: var(--color-light);
 }
 
 .hero__subtitle {
+    position: relative;
+    z-index: 30;
     font-family: var(--font-family-kanit);
     font-weight: 600;
     font-size: var(--font-size-30);
-    margin: 0 0 2rem 0;
-
-    /* When header overlays the hero, add top spacing so content is not hidden
-     and ensure header contrasts correctly. Use class `hero--with-header` on the hero wrapper.
-*/
-    .hero--with-header {
-        padding-top: 5.25rem;
-    }
-
-    /* Slight tweak so hero content stays centered visually when header overlays */
-    .header--overlay+.hero,
-    .hero.header--under {
-        padding-top: 5.25rem;
-    }
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-light);
 }
 
 .hero__dates {
+    position: relative;
+    z-index: 30;
     font-family: var(--font-family-sora);
     font-size: var(--font-size-16);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    color: var(--color-light);
 }
 
-.hero__cta {
+.hero__btn {
+    position: relative;
+    z-index: 30;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.9rem 1.5rem;
-    border: 2px solid var(--color-light);
-    color: var(--color-light);
+    gap: 0.75rem;
+    padding: 1rem 2rem;
     background: transparent;
+    color: var(--color-light);
+    border: 0.25rem solid var(--color-light);
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    gap: 0.6rem;
 }
 
-@media (max-width: 600px) {
-    .hero__title {
-        font-size: calc(var(--font-size-60) * 0.6);
-    }
-
-    .hero__subtitle {
-        font-size: calc(var(--font-size-45) * 0.6);
-    }
+.hero__title--bottom {
+    position: absolute;
+    bottom: 8rem;
+    left: 0.75rem;
+    z-index: 30;
+    font-family: var(--font-family-kanit);
+    font-weight: 700;
+    font-size: var(--font-size-60);
+    line-height: 1.1;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-0);
+    color: var(--color-light);
+    text-align: left;
 }

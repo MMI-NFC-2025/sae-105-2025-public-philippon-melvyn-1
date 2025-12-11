@@ -28,11 +28,12 @@
         </a>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--middle"></span>
             <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
         </button>
 
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <button class="menu__close" aria-label="Fermer le menu">✕</button>
             <ul class="menu__list u-list-unstyled">
                 <a href="index.html" class="header__logo">
                     <img src="assets/icons/Logo (3).svg" alt="" class="header__logo-image" aria-hidden="true">
@@ -68,8 +69,8 @@
         </section>
 
 
-        <section class="artists" aria-labelledby="artists-title">
-            
+        <section class="artists__background" aria-labelledby="artists-title">
+
 
             <div class="artists__list">
 
@@ -135,13 +136,13 @@
 
             </div>
 
-
+        </section>
             <div class="artists__more">
                 <p class="artists__more-text">Et bien d’autres encore</p>
                 <a href="/artiste.html" class="artists__more-btn">EN SAVOIR PLUS <span
                         class="artists__more-arrow">›</span></a>
             </div>
-        </section>
+        
 
 
         <section class="values" aria-labelledby="values-title">
@@ -191,9 +192,9 @@
                             Découvrez toutes nos scènes et leurs infos essentielles pour ne rien manquer des temps forts
                             du Festival Jumelage.
                         </p>
-                                <a href="/scene.html" class="redirection-card__btn">
-                                    EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
-                                </a>
+                        <a href="/scene.html" class="redirection-card__btn">
+                            EN SAVOIR PLUS <span class="redirection-card__arrow">›</span>
+                        </a>
                     </div>
                 </div>
 
@@ -256,11 +257,13 @@
             </div>
         </section>
 
+        
+        <h2 class="partenaires-carousel-title">Ils font vivre le festival</h2>
+        
         <section class="partenaires-carousel">
-            <div class="partenaires-carousel__track">
-                <h2 id="partenaires-carousel" class="partenaires-carousel__title u-hidden">Ils font vivre le festival
-                </h2>
 
+
+            <div class="partenaires-carousel__track">
                 <div class="partenaires-carousel__slide">
                     <img src="/assets/img/partenaire_1.avif" alt="" class="partenaires-carousel__img" loading="lazy">
                 </div>
@@ -348,12 +351,13 @@
                 <li><a href="#" class="footer__legal-link">Politique de confidentialité</a></li>
                 <li><a href="#" class="footer__legal-link">CGU</a></li>
             </ul>
-
-            <hr class="footer__separator">
-
+        
+             
+            <div class="footer__bottom-text">
+            <span class="footer__separator"></span>
             <p class="footer__festival">JUMELAGE Festival 2026</p>
             <p class="footer__copy">&copy; JUMELAGE</p>
-
+            </div>
         </div>
     </footer>
 

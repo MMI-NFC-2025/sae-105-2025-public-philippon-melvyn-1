@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Jumelage est le plus grand festival de talents émergents : plein de contenus variés et des artistes tous plus incroyables les uns que les autres." />
-    <title>JUMELAGE</title>
+    <title>Infos Pratiques - JUMELAGE</title>
 
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -28,11 +28,12 @@
         </a>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--middle"></span>
             <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
         </button>
 
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <button class="menu__close" aria-label="Fermer le menu">✕</button>
             <ul class="menu__list u-list-unstyled">
                 <a href="index.html" class="header__logo">
                     <img src="assets/icons/Logo (3).svg" alt="" class="header__logo-image" aria-hidden="true">
@@ -54,9 +55,19 @@
             <h1 class="hero__title--bottom">Infos Pratiques</h1>
 
         </section>
+        
+        
+        <section class="intro">
+            <p class="intro__text">
+                Préparez votre visite en un clin d'œil : tarifs, accès, hébergements et réponses aux questions essentielles. Tout ce
+                qu’il faut savoir pour profiter pleinement du Festival Jumelage.
+            </p> 
+            
+        </section>
 
+        <h2 id="tarifs-title" class="infos-pratiques__title">Tarifs</h2>
         <section class="infos-pratiques__tarifs" aria-labelledby="tarifs-title">
-            <h2 id="tarifs-title" class="infos-pratiques__title">Tarifs</h2>
+            
 
             <div class="tarifs__list">
 
@@ -65,7 +76,6 @@
                     <p class="tarifs__price">
                         <span class="tarifs__amount">8</span>
                         <span class="tarifs__currency" aria-hidden="true">€</span>
-                        <span class="sr-only">euros</span>
                     </p>
                 </article>
 
@@ -74,7 +84,6 @@
                     <p class="tarifs__price">
                         <span class="tarifs__amount">14</span>
                         <span class="tarifs__currency" aria-hidden="true">€</span>
-                        <span class="sr-only">euros</span>
                     </p>
                 </article>
 
@@ -86,7 +95,6 @@
                     <p class="tarifs__price">
                         <span class="tarifs__amount">6</span>
                         <span class="tarifs__currency" aria-hidden="true">€</span>
-                        <span class="sr-only">euros</span>
                     </p>
                 </article>
 
@@ -115,10 +123,9 @@
                     Aire de camping-car – parking aménagé à proximité du festival
                 </p>
             </article>
-
-            <img src="/assets/img/map.avif" alt="" class="localisation__image" loading="lazy">
-
         </section>
+
+        <img src="/assets/img/map.avif" alt="" class="localisation__image" loading="lazy">
 
         <section class="infos-pratiques__transport" aria-labelledby="transport-title">
             <h2 id="transport-title" class="infos-pratiques__title">Transport</h2>
@@ -166,7 +173,7 @@
         </section>
 
         <section class="infos-pratiques__faq" aria-labelledby="faq-title">
-            <h2 id="faq-title" class="infos-pratiques__title">FAQ</h2>
+            <h2 id="faq-title" class="infos-pratiques__title--faq">FAQ</h2>
 
             <div class="faq__list">
 

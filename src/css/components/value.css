@@ -1,29 +1,42 @@
-/* Component: value
-   BEM block: .value
-   Carte de valeur (avec titre et texte)
-*/
 
 .value {
-    padding: 1.25rem 1rem;
-    border-left: 4px solid rgba(255, 255, 255, 0.06);
-    margin-bottom: 1rem;
+    background-color: var(--color-primary-500);
+    padding: 1.35rem 1.9rem 1.35rem 1.05rem;
+    margin-left: 4rem;
+    position: relative;
+    max-width: 34rem;
+    margin-right: auto;
 }
 
 .value__title {
     font-family: var(--font-family-kanit);
-    font-size: var(--font-size-30);
     color: var(--color-light);
     margin-bottom: 0.5rem;
 }
 
+.value__title::before {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    width: 0.15rem;
+    background: var(--color-primary-400);
+    border-radius: 2px;
+}
+
 .value__text {
-    font-family: var(--font-family-sora);
-    font-size: var(--font-size-16);
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--color-primary-300);
     line-height: 1.6;
 }
 
-.values-wrapper {
-    background: var(--color-primary-500);
-    padding: 2rem 1.25rem;
+.value__text::before {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    padding-top: 0rem;
+    padding-bottom: 8rem;
+    width: 0.15rem;
+    background: var(--color-primary-400);
+    border-radius: 2px;
 }

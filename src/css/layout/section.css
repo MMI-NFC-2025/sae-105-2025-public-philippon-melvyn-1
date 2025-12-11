@@ -3,116 +3,106 @@
    BEM blocks: .intro, .contenu, .hero, .values, .redirection, .artiste1-scene, .artists-background
 */
 
-/* === intro === */
 .intro {
-    /* section intro texte simple */
-}
-
-.intro__text {
-    /* paragraphe intro */
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: start;
 }
 
 .intro__title {
-    /* titre dans intro */
+    font-family: var(--font-family-kanit);
+    font-weight: 600;
+    margin: 0 0 2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--color-accent-300);
+}
+
+.intro__text {
+    font-family: var(--font-family-sora);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 2.25rem;
+    color: var(--color-dark);
+    text-align: start;
+
 }
 
 .intro__image {
-    /* image dans intro */
+    display: block;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    margin: 2rem calc(50% - 50vw);
 }
 
-/* === contenu === */
-.contenu {
-    /* section contenu (utilisée dans artiste1.html, scene1.html) */
-}
 
-.contenu__text {
-    /* texte dans contenu */
-}
-
-.contenu__image {
-    /* image dans contenu */
-}
-
-/* === hero === */
-.hero {
-    /* section héro de page (image + titre) */
-}
-
-.hero__background {
-    /* image de fond du héro */
-}
-
-.hero__background--small {
-    /* variante: héro plus petite */
-}
-
-.hero__title {
-    /* grand titre du héro */
-}
-
-.hero__title--bottom {
-    /* variante: titre en bas du héro */
-}
-
-.hero__subtitle {
-    /* sous-titre (dates) */
-}
-
-.hero__cta {
-    /* call-to-action / lien dans héro */
-}
-
-.hero__btn {
-    /* bouton dans héro */
-}
-
-/* === values === */
+/*values-section*/
 .values {
-    /* section des valeurs */
+    background-color: var(--color-primary-500);
+    padding: 2.5rem 0;
 }
 
-.values__grid {
-    /* grille de valeurs */
+.values-apropos {
+    background-color: var(--color-light);
+    padding: 2.5rem 0;
 }
 
-/* === redirection === */
-.redirection {
-    /* section avec cards de redirection (programme, scènes, infos, about) */
-}
-
-.redirection__grid {
-    /* grille des cartes redirection */
-}
-
-/* === artiste1-scene === */
+/* artiste1-section */
 .artiste1-scene {
     /* section de scène dans artiste1.html */
 }
 
-/* === artists-background === */
+/* artists-section */
+.artists__background {
+    background: var(--color-primary-200);
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
 .artists-background {
-    /* section artistes avec background dans scene1.html */
+    background: var(--color-accent-100);
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
 }
 
-.artiste-background__large {
-    /* élément visuel de fond */
+
+/* infos-pratiques-section */
+.infos-pratiques__tarifs {
+    background: var(--color-primary-200);
+    padding-top: 2.5rem;
+    margin-top: 1rem;
 }
 
-/* === pagination === */
-.pagination {
-    /* section pagination (artiste.html) */
+.infos-pratiques__title {
+    font-family: var(--font-family-kanit);
+    margin-bottom: 1.25rem;
+    padding-left: 1.75rem;
+    color: var(--color-dark);
 }
 
-.pagination__content {}
-
-.pagination__info {}
-
-.pagination__current {}
-
-.pagination__total {}
-
-.pagination__next {
-    /* lien vers page suivante */
+.infos-pratiques__transport {
+    background: var(--color-primary-500);
+    padding: 3rem 2rem;
 }
 
-.pagination__arrow {}
+.infos-pratiques__transport .infos-pratiques__title {
+    font-family: var(--font-family-kanit);
+    margin-bottom: 1.25rem;
+    padding-left: 0.75rem;
+    color: var(--color-light);
+}
+
+.infos-pratiques__faq {
+    padding: 4.5rem 2rem;
+    background: var(--color-light);
+}
+
+.infos-pratiques__title--faq {
+    font-family: var(--font-family-kanit);
+    margin-bottom: 1.25rem;
+    padding-left: 0.05rem;
+    color: var(--color-dark);
+}

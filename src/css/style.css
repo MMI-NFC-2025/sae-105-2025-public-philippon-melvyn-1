@@ -15,6 +15,7 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/section.css";
+@import "layout/404.css";
 
 
 /* components */
@@ -33,3 +34,10 @@
 @import "components/infos-pratiques.css";
 @import "components/faq.css";
 @import "components/program.css";
+@import "components/partners.css";
+@import "components/intro.css";
+@import "components/pagination.css";
+@import "components/value-apropos.css";
+@import "components/tarifs-card.css";
+@import "components/localisation.css";
+@import "components/transport.css";

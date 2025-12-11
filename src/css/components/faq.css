@@ -1,27 +1,60 @@
-/* Component: faq
-   BEM block: .faq
-*/
-
 .faq__list {
-    /* conteneur des questions */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .faq__item {
-    /* item FAQ (question + réponse) */
+    border-bottom: 0.15rem solid var(--color-dark);
+    padding-bottom: 0.2rem;
 }
 
 .faq__question {
-    /* bouton question (clickable pour expand/collapse) */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .faq__question-text {
-    /* texte de la question */
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    color: var(--color-dark);
+    text-align: left;
 }
 
 .faq__icon {
-    /* icône +/- */
+    font-size: var(--font-size-30);
+    transition: transform 0.3s ease;
+}
+
+.faq__question[aria-expanded="true"] .faq__icon {
+    transform: rotate(45deg);
 }
 
 .faq__answer {
-    /* conteneur de la réponse (hidden/shown dynamiquement) */
+    margin-top: 0.625rem;
+    background: var(--color-light);
+    border: 0.0625rem solid var(--color-dark);
+    border-radius: 0.625rem;
+    padding: 0.875rem;
+    display: none;
 }
+
+.faq__question[aria-expanded="true"]+.faq__answer {
+    display: block;
+}
+
+.faq__answer p {
+    margin: 0;
+    font-size: 0.9375rem;
+    color: var(--color-dark);
+}
+
+
+
+

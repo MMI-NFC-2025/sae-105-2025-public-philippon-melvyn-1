@@ -1,0 +1,43 @@
+.partenaires-carousel-title {
+    font-family: var(--font-family-kanit);
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    text-align: left;
+    color: var(--color-accent-300);
+    text-transform: uppercase;
+    
+}
+
+.partenaires-carousel {
+    width: 100%;
+    padding: 2rem;
+    background: var(--color-primary-500);
+    padding: 1.5rem 0.75rem;
+}
+
+.partenaires-carousel__img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.partenaires-carousel__track {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0.5rem 0.75rem;
+}
+
+.partenaires-carousel__slide {
+    min-width: 160px;
+    height: 140px;
+    background: var(--color-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(30, 30, 30, 0.08);
+}
+

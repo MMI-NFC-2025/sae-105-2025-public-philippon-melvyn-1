@@ -1,36 +1,62 @@
-/* Component: redirection-card
-   BEM block: .redirection-card
-*/
 
-.redirection-card {}
-
-.redirection-card__img {}
-
-.redirection-card__content {}
-
-.redirection-card__title {}
-
-.redirection-card__btn {}
-
-/* CTA block with solid blue background and outline button */
 .redirection-card {
-    background: var(--color-accent-100);
-    color: var(--color-light);
-    padding: 2rem 1.25rem;
+    background: var(--color-primary-200);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.redirection-card__img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.redirection-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.redirection-card__content {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .redirection-card__title {
     font-family: var(--font-family-kanit);
-    font-size: var(--font-size-45);
+    font-size: var(--font-size-30);
     font-weight: 600;
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-3);
+    color: var(--color-dark);
+}
+
+.redirection-card__text {
+    font-family: var(--font-family-sora);
+    font-size: var(--font-size-16);
+    line-height: 1.7;
+    color: var(--color-primary-400);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
 }
 
 .redirection-card__btn {
-    display: inline-block;
-    padding: 0.7rem 1.25rem;
-    border: 2px solid var(--color-light);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-accent-200);
     color: var(--color-light);
-    background: transparent;
-    text-transform: uppercase;
+    font-weight: 500;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.redirection-card__arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
 }

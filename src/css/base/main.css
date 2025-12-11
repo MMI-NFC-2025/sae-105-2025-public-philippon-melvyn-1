@@ -1,14 +1,14 @@
-/* Change le modèle de boite par défaut */
+
 * {
     box-sizing: border-box;
 }
 
-/* Scroll fluide pour les ancres */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Sélection de texte personnalisée */
+
 ::selection {
     background-color: var(--toniqueLight);
 }
@@ -21,7 +21,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings */
+
 h1,
 h2 {
     font-family: var(--font-family-kanit);
@@ -44,24 +44,24 @@ h2 {
 h3 {
     font-family: var(--font-family-kanit);
     font-size: var(--font-size-30);
-    line-height: 1.1;
+    line-height: 1.1 rem;
     color: var(--color-dark);
     letter-spacing: -0.03rem;
     margin: 0 0 0.5rem 0;
 }
 
-/* Paragraphs & base text */
+
 p,
 ul,
 ol {
     font-family: var(--font-family-sora);
     font-size: var(--font-size-16);
-    line-height: 1.4;
+    line-height: var(--line-height-140);
     color: var(--color-primary-500);
     margin: 0 0 1rem 0;
 }
 
-/* Small / captions */
+
 small,
 .text-small {
     font-family: var(--font-family-kanit);
@@ -71,7 +71,7 @@ small,
     color: var(--color-primary-400);
 }
 
-/* Button text style */
+
 .btn-text,
 button[type="submit"],
 button {
@@ -82,7 +82,7 @@ button {
     font-weight: 500;
 }
 
-/* Links inside main content */
+
 main a {
     color: var(--color-dark);
     text-decoration: none;
@@ -94,7 +94,7 @@ main a:hover {
     border-bottom-color: var(--color-primary-500);
 }
 
-/* Enlève l'apparence par défaut des boutons, input, select */
+
 button,
 input,
 select,
@@ -110,30 +110,23 @@ textarea {
 }
 
 
-/* --- CLASSES UTILITAIRES --- */
-
-/* Pour enlever l'apparence par défaut des listes */
 .u-list-unstyled {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* Pour rendre invisible mais laisser accessible */
+
 .u-sr-only {
     position: absolute !important;
     inline-size: 1px;
-    /* width logique */
     block-size: 1px;
-    /* height logique */
     margin: -1px;
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
-    /* évite le retour à la ligne */
     border: 0;
 
-    /* Masquage moderne + fallback */
     clip-path: inset(50%);
 }
 
@@ -156,3 +149,4 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-2xl);
 }
+
