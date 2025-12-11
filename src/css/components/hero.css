@@ -1,14 +1,109 @@
 /* Component: hero
-   BEM block: .hero
-   Note: there's already a hero-about component; this file is a general hero skeleton.
+    BEM block: .hero
+    Full-bleed hero used on homepage. Matches Figma: large Kanit headings, centered, white on image.
 */
 
-.hero {}
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 70vh;
+    color: var(--color-light);
+}
 
-.hero__background {}
+.hero__background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    pointer-events: none;
+}
 
-.hero__title {}
+/* subtle dark overlay to ensure text contrast on bright photos */
+.hero__background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.18) 10%, rgba(0, 0, 0, 0.45) 60%);
+    z-index: 1;
+    pointer-events: none;
+}
 
-.hero__subtitle {}
+.hero__inner {
+    position: relative;
+    z-index: 20;
+    /* ensure content sits above background and its overlay */
+    padding: 3rem 1.25rem;
+    width: 100%;
+    max-width: 1100px;
+}
 
-.hero__cta {}
+.hero__title {
+    font-family: var(--font-family-kanit);
+    font-weight: 600;
+    font-size: var(--font-size-60);
+    line-height: 1.05;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.hero__title,
+.hero__subtitle,
+.hero__dates,
+.hero__cta {
+    position: relative;
+    z-index: 25;
+    /* above background overlay */
+}
+
+.hero__subtitle {
+    font-family: var(--font-family-kanit);
+    font-weight: 600;
+    font-size: var(--font-size-30);
+    margin: 0 0 2rem 0;
+
+    /* When header overlays the hero, add top spacing so content is not hidden
+     and ensure header contrasts correctly. Use class `hero--with-header` on the hero wrapper.
+*/
+    .hero--with-header {
+        padding-top: 5.25rem;
+    }
+
+    /* Slight tweak so hero content stays centered visually when header overlays */
+    .header--overlay+.hero,
+    .hero.header--under {
+        padding-top: 5.25rem;
+    }
+}
+
+.hero__dates {
+    font-family: var(--font-family-sora);
+    font-size: var(--font-size-16);
+    margin-bottom: 1.5rem;
+}
+
+.hero__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
+    border: 2px solid var(--color-light);
+    color: var(--color-light);
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    gap: 0.6rem;
+}
+
+@media (max-width: 600px) {
+    .hero__title {
+        font-size: calc(var(--font-size-60) * 0.6);
+    }
+
+    .hero__subtitle {
+        font-size: calc(var(--font-size-45) * 0.6);
+    }
+}

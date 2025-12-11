@@ -4,13 +4,26 @@
 */
 
 .value {
-    /* conteneur pour une valeur/principe */
+    padding: 1.25rem 1rem;
+    border-left: 4px solid rgba(255, 255, 255, 0.06);
+    margin-bottom: 1rem;
 }
 
 .value__title {
-    /* titre de la valeur */
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-30);
+    color: var(--color-light);
+    margin-bottom: 0.5rem;
 }
 
 .value__text {
-    /* contenu texte de la valeur */
+    font-family: var(--font-family-sora);
+    font-size: var(--font-size-16);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.values-wrapper {
+    background: var(--color-primary-500);
+    padding: 2rem 1.25rem;
 }

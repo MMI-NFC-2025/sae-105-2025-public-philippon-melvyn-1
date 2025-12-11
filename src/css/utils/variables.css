@@ -1,30 +1,36 @@
 /* Variable collection */
 :root {
-    /* Mode 1 */
-    /* color */
-    --dark: #000000;
-    --light: #ffffff;
-    --a-100: #2284ff;
-    --a-200: #0743b6;
-    --a-300: #0e234c;
-    --p-100: #faf7f7;
-    --p-200: #f1f1f1;
-    --p-300: #b6b9be;
-    --p-400: #555658;
-    --p-500: #2e2f31;
+    /* Couleurs */
+    --color-accent-100: #2284ff;
+    --color-accent-200: #0743b6;
+    --color-accent-300: #0e234c;
+    --color-primary-100: #faf7f7;
+    --color-primary-200: #f1f1f1;
+    --color-primary-300: #b6b9be;
+    --color-primary-400: #555658;
+    --color-primary-500: #2e2f31;
+    --color-dark: #000000;
+    --color-light: #ffffff;
 
-    /* Mode 1 */
-    /* number */
+    /* Police de caractère */
+    --font-family-kanit: "Kanit", sans-serif;
+    --font-family-sora: "Sora", sans-serif;
+
+    /* Taille de texte */
     --font-size-12: 0.75rem;
     --font-size-14: 0.875rem;
     --font-size-16: 1rem;
     --font-size-30: 1.875rem;
     --font-size-45: 2.8125rem;
     --font-size-60: 3.75rem;
+
+    /* Graisse de texte */
     --font-weight-regular: 25rem;
     --font-weight-medium: 31.25rem;
     --font-weight-semibold: 37.5rem;
     --font-weight-bold: 43.75rem;
+
+    /*Espacement*/
     --letter-spacing--2: -0.125rem;
     --letter-spacing--1: -0.0625rem;
     --letter-spacing-0: 0rem;
@@ -37,9 +43,8 @@
     --paragraph-spacing-0: 0rem;
     --paragraph-spacing-20: 1.25rem;
 
-    /* string */
-    --font-family-kanit: Kanit;
-    --font-family-sora: Sora;
+    /* Bordures et ombres */
+
 }
 
 

@@ -11,3 +11,26 @@
 .redirection-card__title {}
 
 .redirection-card__btn {}
+
+/* CTA block with solid blue background and outline button */
+.redirection-card {
+    background: var(--color-accent-100);
+    color: var(--color-light);
+    padding: 2rem 1.25rem;
+}
+
+.redirection-card__title {
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-45);
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.redirection-card__btn {
+    display: inline-block;
+    padding: 0.7rem 1.25rem;
+    border: 2px solid var(--color-light);
+    color: var(--color-light);
+    background: transparent;
+    text-transform: uppercase;
+}

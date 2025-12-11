@@ -84,3 +84,32 @@
 .scene1-carousel__arrow {}
 
 .scene1-carousel__title {}
+
+/* Partners / sponsors band */
+.partenaires-carousel {
+    background: #efefef;
+    padding: 1.5rem 0.75rem;
+}
+
+.partenaires-carousel__track {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0.5rem 0.75rem;
+}
+
+.partenaires-carousel__slide {
+    min-width: 160px;
+    height: 140px;
+    background: var(--color-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(30, 30, 30, 0.08);
+}
+
+.partenaires-carousel__img {
+    max-width: 90%;
+    max-height: 90%;
+}

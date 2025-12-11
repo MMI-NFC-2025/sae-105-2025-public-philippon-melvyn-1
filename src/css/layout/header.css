@@ -1,0 +1,78 @@
+/* Layout: header
+	 File: layout/header.css
+	 Selecteurs: .header, .header__logo-image, .header__menu-btn, .header__menu
+*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    position: relative;
+    z-index: 40;
+    background: transparent;
+}
+
+.header--solid {
+    background: var(--color-dark);
+}
+
+/* Header overlay variant used when header sits over the hero image
+     - transparent background
+     - positioned absolute to overlay content
+     - logo and controls inherit light color for visibility
+*/
+.header--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    color: var(--color-light);
+    z-index: 60;
+}
+
+.header__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header__logo-image {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.header__menu-btn {
+    color: var(--color-light);
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure interactive elements inherit header color when overlayed */
+.header--overlay .header__menu-btn,
+.header--overlay .header__logo-link {
+    color: var(--color-light);
+}
+
+/* Menu panel (mobile) */
+.header__menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: var(--color-dark);
+    color: var(--color-light);
+    padding: 2rem 1.25rem;
+    transform-origin: top;
+    display: none;
+}
+
+.header__menu[aria-hidden="false"] {
+    display: block;
+}

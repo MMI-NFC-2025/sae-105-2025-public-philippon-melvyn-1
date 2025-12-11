@@ -13,3 +13,36 @@
 .scene-card__content {}
 
 .scene-card__meta {}
+
+/* Scene block with image background and framed CTA */
+.scene {
+    padding: 1rem 0;
+}
+
+.scene-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.scene-card__img {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+}
+
+.scene-card__overlay-btn {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    border: 2px solid var(--color-light);
+    color: var(--color-light);
+    padding: 0.6rem 0.9rem;
+}
+
+.scene-card__desc {
+    padding: 1rem;
+    font-family: var(--font-family-sora);
+    color: var(--color-primary-500);
+}

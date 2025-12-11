@@ -14,10 +14,10 @@
 }
 
 .menu-btn__bar {
-    width: 2rem;
-    height: 0.25rem;
+    width: 1.9rem;
+    height: 0.18rem;
     background-color: currentColor;
-    transition: all 0.3s ease;
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .menu-btn__bar--light {
@@ -30,4 +30,17 @@
 
 .menu-btn__bar--bottom {
     /* positionnement bas */
+}
+
+/* Toggle state */
+.menu-btn[aria-expanded="true"] .menu-btn__bar--top {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar--middle {
+    opacity: 0;
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar--bottom {
+    transform: translateY(-6px) rotate(-45deg);
 }
