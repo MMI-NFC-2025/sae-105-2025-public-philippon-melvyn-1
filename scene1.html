@@ -31,7 +31,7 @@
             <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--middle"></span>
             <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
         </button>
-
+    
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <button class="menu__close" aria-label="Fermer le menu">✕</button>
             <ul class="menu__list u-list-unstyled">
@@ -44,20 +44,23 @@
                 <li class="menu__item"><a class="menu__link" href="/apropos.html">À Propos</a></li>
                 <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
                 <li class="menu__item"><a class="menu__link" href="/artiste.html">Artiste collection</a></li>
+                <li class="menu__item"><a class="menu__link" href="/scene.html">4 Scene</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <section class="hero">
+    <section class="hero hero--scene">
+        <div class="hero__inner">
             <img src="/assets/img/scene_1.avif" class="hero__background--small" alt="">
-        </section>
-
-        <section class="intro-template">
-            <h3 class="intro-template__title">Parc pré la rose</h3>
-            <p class="intro-template__text">28août - 30août |Scene 1</p>
-        </section>
+        </div>
+    </section>
+    
+    <section class="intro-template intro-template--scene">
+        <h3 class="intro-template__title">Parc pré la rose</h3>
+        <p class="intro-template__text">28août – 30août | Scene 1</p>
+    </section>
 
         <section class="contenu">
             <p class="contenu__text">
@@ -78,7 +81,7 @@
                 concerts intimistes que les shows les plus énergiques.
             </p>
 
-            <p class="contenu__text">
+            <p class="contenu__text--ecart">
                 Chaque année, elle voit passer de nouveaux talents, des créations originales et des moments inoubliables
                 qui font d’elle
                 un lieu incontournable du festival
@@ -88,12 +91,7 @@
 
         <section class="artists-background" aria-labelledby="artists-title">
             <h2 id="artists-background-title" class="artists__title u-hidden">AU RENDEZ VOUS</h2>
-            <div class="artiste-background__large">
-                <span></span>
-            </div>
-            <div class="artists__list">
-
-
+            
                 <article class="artist-card">
                     <div class="artist-card__img">
                         <img src="/assets/img/artiste_1.avif" alt="Portrait de l'artiste Carley Jener" loading="lazy">
@@ -152,57 +150,62 @@
                     <a href="artiste4.html" class="artist-card__btn">EN SAVOIR PLUS <span
                             class="artist-card__arrow">›</span></a>
                 </article>
-
-            </div>
-
+ 
         </section>
 
-        <section class="scene1-carousel" aria-labelledby="redirection-scene1">
+        <div class="scene1-carousel" aria-labelledby="redirection-scene1">
             <h2 id="redirection-scene1" class="scene1-carousel__title">D’UNE SCENE A L’AUTRE</h2>
+        </div>
 
-            <div class="scene1-carousel__grid">
-
-                <div class="scene1-carousel__card">
-                    <div class="scene1-carousel__img">
-                        <img src="assets/img/scene_2.avif" alt="" loading="lazy">
+        <section class="scene" aria-labelledby="redirection-4scene">
+            
+                <div class="scene__grid">
+            
+            
+                    <div class="scene-card">
+                        <div class="scene-card__img">
+                            <img src="assets/img/scene_2.avif" alt="" loading="lazy">
+                        </div>
+            
+                        <div class="scene-card__content">
+                            <a href="scene2.html" class="scene-card__btn">
+                                EN SAVOIR PLUS <span class="scene-card__arrow">›</span>
+                            </a>
+                            <h3 class="scene-card__title">Parc pré la rose scene 2</h3>
+                        </div>
                     </div>
-
-                    <div class="scene1-carousel__content">
-                        <a href="" class="scene1-carousel__btn">
-                            EN SAVOIR PLUS <span class="scene1-carousel__arrow">›</span>
-                        </a>
-                        <h3 class="scene1-carousel__title">Parc pré la rose scene 2</h3>
+            
+                    <div class="scene-card">
+                        <div class="scene-card__img">
+                            <img src="assets/img/scene_3.avif" alt="" loading="lazy">
+                        </div>
+            
+                        <div class="scene-card__content">
+                            <a href="scene3.html" class="scene-card__btn">
+                                EN SAVOIR PLUS <span class="scene-card__arrow">›</span>
+                            </a>
+                            <h3 class="scene-card__title">Parc pré la rose scene 3</h3>
+                        </div>
                     </div>
+            
+                    <div class="scene-card">
+                        <div class="scene-card__img">
+                            <img src="assets/img/scene_4.avif" alt="" loading="lazy">
+                        </div>
+            
+                        <div class="scene-card__content">
+                            <a href="scene4.html" class="scene-card__btn">
+                                EN SAVOIR PLUS <span class="scene-card__arrow">›</span>
+                            </a>
+                            <h3 class="scene-card__title">Parc pré la rose scene 4</h3>
+                        </div>
+                    </div>
+            
                 </div>
-
-                <div class="scene1-carousel__card">
-                    <div class="scene1-carousel__img">
-                        <img src="assets/img/scene_3.avif" alt="" loading="lazy">
-                    </div>
-
-                    <div class="scene1-carousel__content">
-                        <a href="" class="scene1-carousel__btn">
-                            EN SAVOIR PLUS <span class="scene1-carousel__arrow">›</span>
-                        </a>
-                        <h3 class="scene1-carousel__title">Parc pré la rose scene 3</h3>
-                    </div>
-                </div>
-
-                <div class="scene1-carousel__card">
-                    <div class="scene1-carousel__img">
-                        <img src="assets/img/scene_4.avif" alt="" loading="lazy">
-                    </div>
-
-                    <div class="scene1-carousel__content">
-                        <a href="" class="scene1-carousel__btn">
-                            EN SAVOIR PLUS <span class="scene1-carousel__arrow">›</span>
-                        </a>
-                        <h3 class="scene1-carousel__title">Parc pré la rose scene 4</h3>
-                    </div>
-                </div>
-
-            </div>
         </section>
+
+            
+        
 
 
     </main>

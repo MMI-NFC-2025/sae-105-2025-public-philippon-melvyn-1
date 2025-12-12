@@ -1,48 +1,67 @@
-/* Component: team-card
-   BEM block: .team-card
-   Carte d'équipe avec image, nom, description, socials
-*/
-
 .team-card {
-    /* conteneur pour une fiche de l'équipe */
+    background: var(--color-primary-400);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 0.25rem 1rem var(--color-primary-500);
 }
 
-.team-card__image {
-    /* conteneur image */
+.team-card__image img {
+    width: 100%;
+    height: 16.25rem;
+    object-fit: cover;
+    display: block;
 }
 
 .team-card__body {
-    /* conteneur texte et socials */
+    padding: 1rem 0.875rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .team-card__name {
-    /* nom du membre */
+    color: var(--color-light);
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-400);
+    margin: 0;
+    position: relative;
+    padding-bottom: 0.25rem;
 }
+
+.team-card__name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background: var(--color-primary-300);
+}
+
 
 .team-card__description {
-    /* description biographique */
+    color: var(--color-primary-200);
+    font-size: var(--font-size-14);
+    line-height: 1.5;
+    margin: 0;
 }
+
 
 .team-card__socials {
-    /* liste de liens sociales */
+    margin-top: 0.625rem;
+    display: flex;
+    gap: 0.875rem;
+    align-items: center;
+    list-style: none;
+    padding: 0rem 1rem;
 }
 
-.team-card__social-item {
-    /* item dans la liste socials */
-}
-
-.team-card__social-link {
-    /* lien social */
-}
-
-.team-card__social-link--x {
-    /* variante X */
-}
-
-.team-card__social-link--facebook {
-    /* variante Facebook */
-}
-
-.team-card__social-link--instagram {
-    /* variante Instagram */
+.team-card__social-link img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
 }

@@ -1,8 +1,4 @@
-/* Layout: section.css
-   Composants de mise en page (sections, conteneurs textes)
-   BEM blocks: .intro, .contenu, .hero, .values, .redirection, .artiste1-scene, .artists-background
-*/
-
+/* intro-section */
 .intro {
     max-width: 68.75rem;
     margin: 0 auto;
@@ -50,10 +46,12 @@
     padding: 2.5rem 0;
 }
 
+
 /* artiste1-section */
 .artiste1-scene {
     /* section de scène dans artiste1.html */
 }
+
 
 /* artists-section */
 .artists__background {
@@ -64,8 +62,14 @@
 
 .artists-background {
     background: var(--color-accent-100);
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.75rem;
+    max-width: 100%;
+    height: auto;
+    padding: 0 1.5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
 }
 
 
@@ -105,4 +109,97 @@
     margin-bottom: 1.25rem;
     padding-left: 0.05rem;
     color: var(--color-dark);
+}
+
+
+/* team-section */
+.team {
+    padding: 3.125rem 1.25rem;
+    background: var(--color-primary-500);
+}
+
+.team__title {
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-30);
+    font-weight: 500;
+    color: var(--color-light);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.875rem;
+}
+
+.team__carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.9375rem;
+}
+
+.team__track {
+    display: flex;
+    gap: 1.375rem;
+}
+
+.team__slide {
+    scroll-snap-align: start;
+    flex: 0 0 18rem;
+}
+
+
+/* transport-section */
+.transport__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.transport__media {
+    width: 100%;
+    height: auto;
+    border-radius: 0.65rem;
+    overflow: hidden;
+}
+
+.transport__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.transport__description {
+    margin-top: 1rem;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--color-light);
+}
+
+/* contenu-section */
+.contenu__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.contenu__text {
+    font-family: var(--font-family-sora);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 2.25rem;
+    color: var(--color-dark);
+    text-align: start;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding-top: 2.5rem;
+}
+
+.contenu__text--ecart {
+    font-family: var(--font-family-sora);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 2.25rem;
+    color: var(--color-dark);
+    text-align: start;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding-bottom: 3.5rem;
 }

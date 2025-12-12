@@ -1,152 +1,84 @@
-/* Component: scene
-   BEM block: .scene and .scene-card
-*/
 
-.scene {}
 
-.scene__list {}
-
-.scene-card {}
-
-.scene-card__img {}
-
-.scene-card__content {}
-
-.scene-card__meta {}
-
-/* Scene block with image background and framed CTA */
 .scene {
-    padding: 1rem 0;
+    padding: 0rem 0rem;
 }
 
 .scene-card {
     position: relative;
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
+    margin-bottom: 0.25rem;
 }
 
 .scene-card__img {
-    width: 100%;
-    height: 260px;
-    background-size: cover;
-    background-position: center;
-}
-
-.scene-card__overlay-btn {
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    border: 2px solid var(--color-light);
-    color: var(--color-light);
-    padding: 0.6rem 0.9rem;
-}
-
-.scene-card__desc {
-    padding: 1rem;
-    font-family: var(--font-family-sora);
-    color: var(--color-primary-500);
-}
-
-
-/* ==========================================================================
-   SCENE GRID SECTION
-   ========================================================================== */
-
-.scene {
-    padding: 2rem 1.5rem 6rem;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.scene__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-}
-
-/* ==========================================================================
-   SCENE CARD COMPONENT
-   ========================================================================== */
-
-.scene-card {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.scene-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
-.scene-card__img {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-.scene-card__img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.scene-card:hover .scene-card__img img {
-    transform: scale(1.05);
 }
 
 .scene-card__content {
     position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    text-align: center;
+    z-index: 3;
+}
+
+.scene-card::after {
+    content: "";
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 2rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
-    z-index: 2;
+    height: 100%;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.55) 0%,
+            rgba(0, 0, 0, 0.25) 40%,
+            rgba(0, 0, 0, 0.05) 100%);
+    z-index: 1;
 }
 
 .scene-card__btn {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    margin-bottom: 1rem;
+    padding: 0.625rem 1.25rem;
+    border: 0.125rem solid var(--color-light);
     background: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    font-family: "Kanit", sans-serif;
-    font-size: 0.875rem;
-    font-weight: 500;
+    color: var(--color-light);
     text-decoration: none;
+    font-family: var(--font-family-kanit);
+    font-size: 0.85rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.scene-card__btn:hover {
-    background: #ffffff;
-    color: #1a1a1a;
+    border-radius: 0.25rem;
+    z-index: 3;
 }
 
 .scene-card__arrow {
-    font-size: 1.25rem;
-    transition: transform 0.3s ease;
-}
-
-.scene-card__btn:hover .scene-card__arrow {
-    transform: translateX(5px);
+    font-size: 1.2rem;
+    transition: transform 0.25s ease;
 }
 
 .scene-card__title {
-    font-family: "Kanit", sans-serif;
-    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: var(--color-light);
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-16);
     font-weight: 600;
-    color: #ffffff;
-    margin: 0;
     text-transform: capitalize;
+    z-index: 3;
 }
+
+
+
+
+
+
+
+

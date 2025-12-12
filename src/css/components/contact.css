@@ -1,291 +1,194 @@
-/* Component: contact
-   BEM blocks: .contact-form, .contact-info
-*/
+/***********************************************
+ **************** PAGE CONTACT *****************
+ ***********************************************/
 
-/* === contact-form === */
-.contact-form {
-    /* formulaire de contact */
+.contact {
+    padding: 2rem 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Kanit", sans-serif;
 }
 
-.contact-form__field {
-    /* champ du formulaire */
-}
-
-.contact-form__field--textarea {
-    /* variante pour textarea */
-}
-
-.contact-form__label {
-    /* label du champ */
-}
-
-.contact-form__optional {
-    /* texte "(facultatif)" */
-}
-
-.contact-form__input {
-    /* input text/email */
-}
-
-.contact-form__textarea {
-    /* textarea */
-}
-
-.contact-form__actions {
-    /* conteneur des boutons d'action */
-}
-
-.contact-form__submit {
-    /* bouton submit */
-}
-
-/* === contact-info === */
-.contact-info {
-    /* liste des infos de contact */
-}
-
-.contact-info__item {
-    /* item (téléphone, email, adresse) */
-}
-
-.contact-info__icon {
-    /* icône de l'item */
-}
-
-.contact-info__content {
-    /* contenu texte de l'item */
-}
-
-.contact-info__title {
-    /* titre du type d'info (Téléphone, etc.) */
-}
-
-.contact-info__text {
-    /* texte de l'info */
-}
-
-.contact-info__link {
-    /* lien clickable (tel:, mailto:, http) */
-}
-
-/* ========================================
-   PAGE CONTACT - STYLES
-   ======================================== */
-
-/* ========================================
-   SECTION INTRODUCTION
-   ======================================== */
+/*************** TITRE & INTRO *****************/
 
 .contact__intro {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 80px 20px 60px;
-    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .contact__title {
-    font-family: var(--font-family-kanit);
-    font-size: clamp(2.5rem, 5vw, 3.75rem);
+    font-size: 1.8rem;
     font-weight: 700;
-    color: var(--color-dark);
-    margin-bottom: 24px;
-    letter-spacing: -0.02em;
+    color: #000;
+    margin-bottom: 0.8rem;
 }
 
 .contact__text {
-    font-family: var(--font-family-kanit);
-    font-size: clamp(1rem, 2vw, 1.125rem);
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--color-primary-400);
-    max-width: 700px;
-    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    max-width: 90%;
 }
 
-/* ========================================
-   FORMULAIRE DE CONTACT
-   ======================================== */
+/**************** FORMULAIRE ****************/
 
 .contact__form-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    margin-top: 1.5rem;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.2rem;
 }
 
-.contact-form__field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
+/* Label */
 .contact-form__label {
-    font-family: var(--font-family-kanit);
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--color-dark);
-    letter-spacing: 0.02em;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #000;
+    display: block;
+    margin-bottom: 0.3rem;
 }
 
 .contact-form__optional {
     font-weight: 400;
-    color: var(--color-primary-300);
+    color: #555;
 }
 
+/* Champs */
 .contact-form__input,
 .contact-form__textarea {
-    font-family: var(--font-family-kanit);
-    font-size: 1rem;
-    padding: 16px 20px;
-    border: 2px solid var(--color-primary-200);
-    border-radius: 8px;
-    background-color: var(--color-light);
-    color: var(--color-dark);
-    transition: all 0.3s ease;
-    outline: none;
-}
-
-.contact-form__input::placeholder,
-.contact-form__textarea::placeholder {
-    color: var(--color-primary-300);
-    opacity: 0.8;
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    transition: border 0.2s;
 }
 
 .contact-form__input:focus,
 .contact-form__textarea:focus {
-    border-color: var(--color-accent-100);
-    box-shadow: 0 0 0 3px rgba(34, 132, 255, 0.1);
+    border-color: #2489ff;
+    outline: none;
+}
+
+/* Zone commentaire */
+.contact-form__field--textarea {
+    margin-top: 0.5rem;
 }
 
 .contact-form__textarea {
-    min-height: 150px;
-    resize: vertical;
-    font-family: var(--font-family-kanit);
+    resize: none;
 }
 
-.contact-form__field--textarea {
-    margin-top: 8px;
-}
+/*************** BOUTON SUBMIT ****************/
 
 .contact-form__actions {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 16px;
+    margin-top: 0.5rem;
 }
 
 .contact-form__submit {
-    font-family: var(--font-family-kanit);
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    padding: 16px 48px;
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    border: 2px solid var(--color-dark);
+    width: 100%;
+    padding: 14px 0;
+    background: #2489ff;
+    border: none;
     border-radius: 8px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s;
 }
 
-
-
-.contact-form__submit:active {
-    transform: translateY(0);
+.contact-form__submit:hover {
+    background: #1c6ed1;
 }
 
-/* ========================================
-   SECTION INFORMATIONS DE CONTACT
-   ======================================== */
+/***********************************************
+ ************** SECTION COORDONNÉES ************
+ ***********************************************/
 
 .contact__info {
-    max-width: 800px;
-    margin: 60px auto 80px;
-    padding: 40px 20px;
-    background-color: var(--color-primary-100);
-    border-radius: 12px;
+    margin-top: 3rem;
+    padding: 0;
 }
 
 .contact__info-title {
-    font-family: var(--font-family-kanit);
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 700;
-    color: var(--color-dark);
-    margin-bottom: 32px;
-    text-align: center;
+    display: none;
+    /* Pas présent dans ta maquette */
 }
 
+/* LISTE */
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+/* BLOC BLEU GRAND FORMAT */
 .contact-info__item {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 24px;
-    background-color: var(--color-light);
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    gap: 1.2rem;
+    background: #2489ff;
+    /* Bleu pur de la maquette */
+    padding: 1.6rem 1.2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    /* FINE LIGNE DE SÉPARATION */
 }
 
+/* Dernier bloc sans bordure */
+.contact-info__item:last-child {
+    border-bottom: none;
+}
 
+/************* ICÔNE *************/
 .contact-info__icon {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-accent-100);
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
     border-radius: 50%;
-    padding: 12px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid #e5f1ff;
+    /* Contour bleu très léger */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+    /* Ombre douce comme sur la capture */
 }
 
 .contact-info__icon img {
-    width: 100%;
-    height: 100%;
+    width: 34px;
+    height: 34px;
     object-fit: contain;
-    filter: brightness(0) invert(1);
 }
 
+/************* TEXTE *************/
 .contact-info__content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    color: white;
 }
 
 .contact-info__title {
-    font-family: var(--font-family-kanit);
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--color-dark);
-    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 0.3rem 0;
 }
 
 .contact-info__text {
-    font-family: var(--font-family-kanit);
     font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-primary-400);
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.3;
 }
 
 .contact-info__link {
-    color: var(--color-primary-400);
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: #ffffff;
+    font-size: 1rem;
 }

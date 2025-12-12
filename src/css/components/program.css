@@ -1,92 +1,19 @@
-/* Component: program
-   BEM blocks: .program-card, .program-search, .program-days, .program-download
-*/
-
-/* === program-card === */
-.program-card {
-    /* une ligne du programme (artiste, scène, heure) */
-}
-
-.program-card__artist {
-    /* colonne artiste */
-}
-
-.program-card__name {
-    /* nom de l'artiste */
-}
-
-.program-card__genre {
-    /* genre musical */
-}
-
-.program-card__scene {
-    /* colonne scène */
-}
-
-.program-card__time {
-    /* colonne horaire */
-}
-
-/* === program-search === */
-.program-search {
-    /* formulaire de recherche d'artiste */
-}
-
-.program-search__label {
-    /* label du champ */
-}
-
-.program-search__input {
-    /* champ input */
-}
-
-/* === program-days === */
-.program-days {
-    /* boutons pour filtrer par jour */
-}
-
-.program-days__button {
-    /* bouton jour (vendredi, samedi, dimanche) */
-}
-
-.program-days__button--active {
-    /* variante: jour sélectionné */
-}
-
-.program-days__add {
-    /* bouton + pour ajouter/options */
-}
-
-/* === program-download === */
-.program-download {
-    /* section pour télécharger le PDF */
-}
-
-.program-download__content {
-    /* conteneur du contenu */
-}
-
-.program-download__text {
-    /* texte du téléchargement */
-}
-
-.program-download__link {
-    /* lien/bouton de téléchargement */
-}
-
-
-
-/*************************************
- ************  SEARCH BAR  ***********
- *************************************/
+/*****************************************************
+ ****************  PROGRAMME — GLOBAL  ****************
+ *****************************************************/
 
 .program__filters {
-    background: #fff;
-    padding: 20px 18px;
+    background: #ffffff;
+    padding: 18px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
+/*****************************************************
+ *******************   SEARCH BAR   *******************
+ *****************************************************/
+
 .program-search {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .program-search__label {
@@ -96,87 +23,89 @@
 .program-search__input {
     width: 100%;
     padding: 10px 12px;
-    border: 1px solid #000;
-    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
     font-size: 14px;
+    font-family: "Kanit", sans-serif;
+    color: #333;
 }
 
 
-/*************************************
- ***********   DAY SELECTOR   ********
- *************************************/
+/*****************************************************
+ ***************   DAY SELECTOR (TABS)  ***************
+ *****************************************************/
 
 .program-days {
     display: flex;
-    gap: 8px;
     justify-content: center;
-    margin-top: 8px;
+    gap: 10px;
 }
 
 .program-days__button {
-    padding: 10px 20px;
-    background: #e1e1e1;
-    border-radius: 6px;
-    text-decoration: none;
+    padding: 8px 18px;
+    background: #f3f3f3;
+    border-radius: 8px;
     color: #000;
+    text-decoration: none;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
     font-size: 14px;
+    border: 1px solid #dcdcdc;
 }
 
 .program-days__button--active {
     background: #003180;
-    color: #fff;
+    color: #ffffff;
+    border-color: #003180;
 }
 
 .program-days__add {
-    padding: 10px 16px;
-    background: #f4f4f4;
-    border-radius: 6px;
-    border: none;
+    padding: 8px 16px;
     font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    background: #f5f5f5;
     cursor: pointer;
 }
 
 
-/*************************************
- ************   DAY BLOCKS   *********
- *************************************/
+/*****************************************************
+ **********************   DAYS   **********************
+ *****************************************************/
 
-/* JOUR FOND BLANC */
 .program__day {
-    padding: 30px 18px;
+    padding: 45px 18px;
     background: #ffffff;
 }
 
 .program__day-title {
-    font-size: 22px;
-    font-weight: 700;
-    color: #003180;
-    text-align: center;
     font-family: "Kanit", sans-serif;
-    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #001c48;
+    text-align: center;
+    margin-bottom: 26px;
 }
 
-/* JOUR FOND BLEU (samedi) */
+/* SAMEDI – fond bleu */
 .program__day--background {
+    padding: 45px 18px;
     background: #003180;
-    padding: 30px 18px;
 }
 
 .program__day-title--light {
-    font-size: 22px;
+    font-family: "Kanit", sans-serif;
+    font-size: 28px;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
-    font-family: "Kanit", sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 
 
-/*************************************
- *************   PROGRAM CARDS *******
- *************************************/
+/*****************************************************
+ ********************  PROGRAM CARDS  *****************
+ *****************************************************/
 
 .program-list {
     list-style: none;
@@ -189,75 +118,117 @@
 
 .program-card {
     display: grid;
-    grid-template-columns: 1fr 100px 100px;
-    align-items: center;
-    padding: 14px;
+    grid-template-columns: 1fr 120px 120px;
+    align-items: stretch;
     background: #ffffff;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
 }
 
+/* SAMEDI – cartes légèrement grises */
 .program__day--background .program-card {
-    background: #f5f5f5;
+    background: #ebebeb;
 }
 
-/* ARTISTE */
+/********* ARTISTE *********/
+
+.program-card__artist {
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .program-card__name {
+    font-family: "Kanit", sans-serif;
     font-weight: 700;
-    font-size: 15px;
-    color: #222;
-    margin-bottom: 2px;
+    font-size: 16px;
+    color: #1d1d1d;
 }
 
 .program-card__genre {
     font-size: 13px;
-    color: #777;
+    color: #7a7a7a;
+    font-family: "Kanit", sans-serif;
+    margin-top: 2px;
 }
 
-/* SCENE */
+
+/********* SCÈNE *********/
+
 .program-card__scene {
-    background: #333;
-    color: #fff;
-    padding: 6px 8px;
-    border-radius: 4px;
-    font-size: 13px;
-    text-align: center;
+    background: #2c2c32;
+    /* gris foncé exactement comme maquette */
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* TIME */
+
+/********* HORAIRE *********/
+
 .program-card__time {
     background: #00215c;
-    color: #fff;
-    padding: 6px 8px;
-    border-radius: 4px;
-    font-size: 13px;
-    text-align: center;
+    /* bleu foncé de la maquette */
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-/*************************************
- ***********   DOWNLOAD BLOCK   *******
- *************************************/
+/*****************************************************
+ ***************  DOWNLOAD PROGRAM BLOCK  *************
+ *****************************************************/
 
 .program-download {
-    background: #003180;
-    padding: 35px 20px;
-    color: #fff;
+    background: #1976ff;
+    /* bleu vif identique PDF */
+    padding: 45px 22px;
+    color: #ffffff;
+    margin-top: 35px;
 }
 
 .program-download__content {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .program-download__text {
-    font-size: 15px;
-    margin-bottom: 10px;
-    line-height: 1.4;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.program-download__link {
+    display: inline-block;
+    margin-top: 12px;
 }
 
 .program-download__link img {
     width: 34px;
+}
+
+/* Ligne blanche sous "Télécharger la version PDF" */
+.program-download__text:last-of-type {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.program-download__text:last-of-type::after {
+    content: "";
     display: block;
-    margin-top: 16px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    margin-top: 12px;
 }
