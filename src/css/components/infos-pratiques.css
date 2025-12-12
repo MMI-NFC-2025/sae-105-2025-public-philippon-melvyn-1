@@ -1,0 +1,36 @@
+.infos-pratiques__tarifs {
+    background: var(--color-primary-200);
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+}
+
+.infos-pratiques__title {
+    font-family: var(--font-family-kanit);
+    margin-bottom: 1.25rem;
+    padding-left: 1.75rem;
+    color: var(--color-dark);
+}
+
+.infos-pratiques__transport {
+    background: var(--color-primary-500);
+    padding: 3rem 2rem;
+}
+
+.infos-pratiques__transport .infos-pratiques__title {
+    font-family: var(--font-family-kanit);
+    margin-bottom: 1.25rem;
+    padding-left: 0.75rem;
+    color: var(--color-light);
+}
+
+.infos-pratiques__faq {
+    padding: 4.5rem 2rem;
+    background: var(--color-light);
+}
+
+.infos-pratiques__title--faq {
+    font-family: var(--font-family-kanit);
+    margin-bottom: 1.25rem;
+    padding-left: 0.05rem;
+    color: var(--color-dark);
+}

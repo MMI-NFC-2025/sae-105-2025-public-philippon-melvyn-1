@@ -57,7 +57,7 @@
 
 .artist-card__btn {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: end;
     gap: 1rem;
     padding: 1rem 1.5rem;
@@ -67,8 +67,10 @@
     text-transform: uppercase;
     margin: 0.75rem 0rem 1.25rem;
     width: 60%;
+    text-decoration: none;
 }
 
 .artist-card__arrow {
     font-size: 1.5rem;
+    line-height: 1;
 }

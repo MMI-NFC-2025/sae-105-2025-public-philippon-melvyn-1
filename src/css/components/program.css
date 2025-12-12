@@ -1,19 +1,12 @@
-/*****************************************************
- ****************  PROGRAMME — GLOBAL  ****************
- *****************************************************/
-
 .program__filters {
-    background: #ffffff;
-    padding: 18px;
-    border-bottom: 1px solid #e5e5e5;
+    background: var(--color-primary-200);
+    padding: 1.5rem;
+
 }
 
-/*****************************************************
- *******************   SEARCH BAR   *******************
- *****************************************************/
-
 .program-search {
-    margin-bottom: 14px;
+    margin-bottom: 1.5rem;
+
 }
 
 .program-search__label {
@@ -22,90 +15,74 @@
 
 .program-search__input {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #cfcfcf;
-    border-radius: 6px;
-    font-size: 14px;
-    font-family: "Kanit", sans-serif;
-    color: #333;
+    padding: 0.625rem 0.75rem;
+    border: 0.15rem solid var(--color-primary-300);
+    border-radius: 0.375rem;
+    font-size: var(--font-size-14);
+    font-family: var(--font-family-kanit);
+    color: var(--color-primary-300);
 }
-
-
-/*****************************************************
- ***************   DAY SELECTOR (TABS)  ***************
- *****************************************************/
 
 .program-days {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 1.25rem;
 }
 
 .program-days__button {
-    padding: 8px 18px;
-    background: #f3f3f3;
-    border-radius: 8px;
-    color: #000;
+    padding: 0.5rem 1.125rem;
+    background: var(--color-primary-200);
+    border-radius: 0.5rem;
+    color: var(--color-primary-400);
     text-decoration: none;
-    font-weight: 600;
-    font-family: "Kanit", sans-serif;
-    font-size: 14px;
-    border: 1px solid #dcdcdc;
+    font-weight: 500;
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-14);
+    border: 0.15rem solid var(--color-primary-300);
 }
 
 .program-days__button--active {
-    background: #003180;
-    color: #ffffff;
-    border-color: #003180;
+    background: var(--color-accent-200);
+    color: var(--color-light);
+    border-color: var(--color-accent-200);
 }
 
 .program-days__add {
-    padding: 8px 16px;
-    font-size: 18px;
-    border-radius: 8px;
-    border: 1px solid #dcdcdc;
-    background: #f5f5f5;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-16);
+    border-radius: 10rem;
+    border: 0.15rem solid var(--color-primary-300);
+    background: var(--color-primary-200);
     cursor: pointer;
 }
 
-
-/*****************************************************
- **********************   DAYS   **********************
- *****************************************************/
-
 .program__day {
-    padding: 45px 18px;
-    background: #ffffff;
+    padding: 2.8125rem 1.125rem;
+    background: var(--color-light);
 }
 
 .program__day-title {
-    font-family: "Kanit", sans-serif;
-    font-size: 28px;
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-30);
     font-weight: 700;
-    color: #001c48;
+    color: var(--color-accent-300);
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
 }
 
-/* SAMEDI – fond bleu */
 .program__day--background {
-    padding: 45px 18px;
-    background: #003180;
+    padding: 2.8125rem 1.125rem;
+    background: var(--color-accent-200);
 }
 
 .program__day-title--light {
-    font-family: "Kanit", sans-serif;
-    font-size: 28px;
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-30);
     font-weight: 700;
-    color: #ffffff;
+    color: var(--color-light);
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
 }
-
-
-/*****************************************************
- ********************  PROGRAM CARDS  *****************
- *****************************************************/
 
 .program-list {
     list-style: none;
@@ -113,122 +90,51 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 1rem;
 }
-
-.program-card {
-    display: grid;
-    grid-template-columns: 1fr 120px 120px;
-    align-items: stretch;
-    background: #ffffff;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
-}
-
-/* SAMEDI – cartes légèrement grises */
-.program__day--background .program-card {
-    background: #ebebeb;
-}
-
-/********* ARTISTE *********/
-
-.program-card__artist {
-    padding: 12px 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.program-card__name {
-    font-family: "Kanit", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: #1d1d1d;
-}
-
-.program-card__genre {
-    font-size: 13px;
-    color: #7a7a7a;
-    font-family: "Kanit", sans-serif;
-    margin-top: 2px;
-}
-
-
-/********* SCÈNE *********/
-
-.program-card__scene {
-    background: #2c2c32;
-    /* gris foncé exactement comme maquette */
-    color: #ffffff;
-    font-family: "Kanit", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/********* HORAIRE *********/
-
-.program-card__time {
-    background: #00215c;
-    /* bleu foncé de la maquette */
-    color: #ffffff;
-    font-family: "Kanit", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/*****************************************************
- ***************  DOWNLOAD PROGRAM BLOCK  *************
- *****************************************************/
 
 .program-download {
-    background: #1976ff;
-    /* bleu vif identique PDF */
-    padding: 45px 22px;
-    color: #ffffff;
-    margin-top: 35px;
+    background: var(--color-accent-100);
+    padding: 0rem 1.375rem;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+    color: var(--color-light);
 }
 
 .program-download__content {
-    max-width: 650px;
-    margin: 0 auto;
+    max-width: 30rem;
+    margin-left: 0 auto;
 }
 
 .program-download__text {
-    font-family: "Kanit", sans-serif;
-    font-size: 16px;
+    font-family: var(--font-family-kanit);
+    color: var(--color-light);
+    font-size: var(--font-size-16);
     line-height: 1.5;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 .program-download__link {
-    display: inline-block;
-    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0;
+    text-decoration: none;
+    color: var(--color-light);
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-16);
 }
 
 .program-download__link img {
-    width: 34px;
-}
-
-/* Ligne blanche sous "Télécharger la version PDF" */
-.program-download__text:last-of-type {
-    position: relative;
-    padding-bottom: 10px;
+    width: 2.5rem;
+    height: auto;
 }
 
 .program-download__text:last-of-type::after {
     content: "";
     display: block;
     width: 100%;
-    height: 2px;
-    background: #ffffff;
-    margin-top: 12px;
+    height: 0.125rem;
+    background: var(--color-light);
+    margin-top: 0.75rem;
 }

@@ -19,26 +19,29 @@
 
 
 /* components */
-@import "components/menu.css";
-@import "components/hero.css";
-@import "components/artists.css";
 @import "components/artist-card.css";
-@import "components/intro-template.css";
-@import "components/redirection-card.css";
-@import "components/scene.css";
-@import "components/menu-btn.css";
-@import "components/team-card.css";
-@import "components/value.css";
-@import "components/carousel.css";
+@import "components/artiste-carousel-galerie.css";
+@import "components/artists.css";  
 @import "components/contact.css";
-@import "components/infos-pratiques.css";
+@import "components/contenu.css";
 @import "components/faq.css";
-@import "components/program.css";
-@import "components/partners.css";
+@import "components/hero.css";
+@import "components/infos-pratiques.css";
+@import "components/intro-template.css";
 @import "components/intro.css";
-@import "components/pagination.css";
-@import "components/value-apropos.css";
-@import "components/tarifs-card.css";
 @import "components/localisation.css";
+@import "components/menu.css";
+@import "components/pagination.css";
+@import "components/partners-carousel.css";
+@import "components/program-card.css";
+@import "components/program.css";
+@import "components/redirection-card.css";
+@import "components/scene-card.css";
+@import "components/scene-carousel.css";
+@import "components/tarifs.css";
+@import "components/team-card.css";
 @import "components/transport.css";
-@import "components/artiste-carousel.css";
+@import "components/values.css";
+
+
+

@@ -154,3 +154,49 @@
     color: var(--color-accent-100);
     transform: translateX(0.25rem);
 }
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    border: none;
+    background: transparent;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 50;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.menu-btn[aria-expanded="true"] {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-btn__bar {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: var(--color-light);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.menu-btn__bar--bottom {
+    width: 1rem;
+    margin-left: auto;
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar--top {
+    transform: translateY(7px) rotate(25deg);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar--middle {
+    transform: translateY(0px) rotate(0deg);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar--bottom {
+    transform: translateY(-7px) rotate(-25deg);
+}

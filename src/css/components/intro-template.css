@@ -1,15 +1,3 @@
-.hero.hero--scene {
-    height: auto;
-    min-height: 0;
-    padding: 0;
-    margin: 0;
-    display: block;
-    align-items: stretch;
-    justify-content: flex-start;
-    text-align: left;
-    overflow: visible;
-}
-
 .intro-template__title {
     font-family: var(--font-family-kanit);
     font-size: var(--font-size-30);
@@ -75,47 +63,3 @@
     height: 1.25rem;
     display: block;
 }
-
-.artists__title {
-    font-family: var(--font-family-kanit);
-    font-size: var(--font-size-30);
-    font-weight: 400;
-    color: var(--color-light);
-    letter-spacing: var(--letter-spacing-0);
-    line-height: 1.2;
-    margin: 0 0 0.2rem 0;
-}
-
-.artists__title::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 0.2rem;
-    background: var(--color-light);
-    opacity: 1;
-    margin: 0.625rem auto 0;
-}
-
-.scene1-carousel__title {
-    font-family: var(--font-family-kanit);
-    font-size: var(--font-size-30);
-    font-weight: 600;
-    color: var(--color-dark);
-    letter-spacing: var(--letter-spacing-0);
-    line-height: 1.2;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 1.5rem;
-    margin-right: 1.25rem;
-}
-
-.scene1-carousel__title::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 0.2rem;
-    background: var(--color-dark);
-    opacity: 1;
-    margin: 0.625rem auto 0;
-}
-

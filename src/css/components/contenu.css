@@ -1,0 +1,30 @@
+.contenu__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.contenu__text {
+    font-family: var(--font-family-sora);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 2.25rem;
+    color: var(--color-dark);
+    text-align: start;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding-top: 2.5rem;
+}
+
+.contenu__text--ecart {
+    font-family: var(--font-family-sora);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 2.25rem;
+    color: var(--color-dark);
+    text-align: start;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding-bottom: 3.5rem;
+}

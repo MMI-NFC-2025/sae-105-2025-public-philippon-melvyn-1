@@ -1,0 +1,58 @@
+.program-card {
+    display: grid;
+    grid-template-columns: 9.5rem 8.125rem 8.125rem;
+    max-height: 6rem;
+    align-items: stretch;
+    background: var(--color-light);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    font-family: var(--font-family-sora);
+}
+
+.program-card__name {
+    font-family: var(--font-family-kanit);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-primary-500);
+    padding-top: 0rem;
+    position: relative;
+}
+
+.program-card__name::after {
+    content: "";
+    width: 2.75rem;
+    height: 0.125rem;
+    background: var(--color-primary-300);
+    position: absolute;
+    bottom: -0.35rem;
+    left: 0;
+}
+
+.program-card__genre {
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-14);
+    color: var(--color-primary-400);
+    margin: 0;
+}
+
+.program-card__scene {
+    background: var(--color-primary-500);
+    color: var(--color-light);
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-16);
+    font-weight: 800;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.program-card__time {
+    background: var(--color-accent-300);
+    color: var(--color-light);
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-16);
+    font-weight: 800;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
