@@ -140,19 +140,11 @@
 }
 
 .menu__item a:focus {
-    background: linear-gradient(90deg, rgba(var(--color-light-rgb, 255, 255, 255), 0.1) 0%, rgba(var(--color-light-rgb, 255, 255, 255), 0.03) 100%);
-    border-left-color: var(--color-accent-100);
-    padding-left: 1.5rem;
-    color: var(--color-accent-100);
-    transform: translateX(0.25rem);
+    outline: none;
 }
 
 .menu__link:focus {
-    background: linear-gradient(90deg, rgba(var(--color-light-rgb, 255, 255, 255), 0.1) 0%, rgba(var(--color-light-rgb, 255, 255, 255), 0.03) 100%);
-    border-left-color: var(--color-accent-100);
-    padding-left: 1.5rem;
-    color: var(--color-accent-100);
-    transform: translateX(0.25rem);
+    outline: none;
 }
 
 .menu-btn {

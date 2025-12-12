@@ -56,6 +56,10 @@
     text-decoration: none;
 }
 
+.menu .header__logo {
+    margin-top: 0.5rem;
+}
+
 body[style*="overflow: hidden"] .header__link {
     opacity: 0;
     pointer-events: none;

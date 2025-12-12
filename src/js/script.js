@@ -56,7 +56,7 @@ if (prevBtn && nextBtn && teamTrack && teamSlides.length > 0) {
 }
 
 // FAQ Accordion
-//
+//https://sae105.melvyn-philippon.fr/infospratique
 const faqQuestions = document.querySelectorAll('.faq__question');
 
 faqQuestions.forEach(function (question) {
@@ -84,7 +84,7 @@ if (partnersTrack) {
 }
 
 // Filtres programme par jour
-//
+//https://sae105.melvyn-philippon.fr/programme
 const filterButtons = document.querySelectorAll('.program-days__button');
 const programSections = document.querySelectorAll('.program__day, .program__day--background');
 
@@ -109,4 +109,23 @@ filterButtons.forEach(function (button) {
     };
 });
 
-//
+// Header disparait au footer
+//https://sae105.melvyn-philippon.fr/
+const header = document.querySelector('.header');
+const footer = document.querySelector('.footer');
+
+if (header && footer) {
+    header.style.transition = 'opacity 0.3s, transform 0.3s';
+
+    const observer = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) {
+            header.style.opacity = '0';
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            header.style.opacity = '1';
+            header.style.transform = 'translateY(0)';
+        }
+    }, { threshold: 0.1 });
+
+    observer.observe(footer);
+} 
