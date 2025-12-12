@@ -1,192 +1,143 @@
-const toggle = document.querySelector(".menu-btn");
-const nav = document.querySelector(".menu");
-const closeBtn = document.querySelector(".menu__close");
-const page = document.body;
+// Menu mobile
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+const menuClose = document.querySelector(".menu__close");
 
-// Helper function to close menu
-function closeMenu() {
-    if (toggle) toggle.setAttribute("aria-expanded", "false");
-    if (nav) nav.setAttribute("aria-hidden", "true");
-    page.style.overflow = "";
+function toggleMenu(open) {
+    if (!menuBtn || !menu) return;
+    menuBtn.setAttribute("aria-expanded", open);
+    menu.setAttribute("aria-hidden", !open);
+    document.body.style.overflow = open ? "hidden" : "";
 }
 
-// Menu toggle: manages aria-expanded and aria-hidden attributes
-if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-        const isOpen = toggle.getAttribute("aria-expanded") === "true";
-        const newState = !isOpen;
-
-        // Update toggle button state
-        toggle.setAttribute("aria-expanded", newState);
-
-        // Update nav visibility via aria-hidden (CSS hooks on this)
-        nav.setAttribute("aria-hidden", !newState);
-
-        // Prevent body scroll when menu is open
-        page.style.overflow = newState ? "hidden" : "";
+if (menuBtn && menu) {
+    menuBtn.addEventListener("click", () => {
+        const isOpen = menuBtn.getAttribute("aria-expanded") === "true";
+        toggleMenu(!isOpen);
     });
 
-    // Close menu with the close button (X)
-    if (closeBtn) {
-        closeBtn.addEventListener("click", closeMenu);
-    }
+    if (menuClose) menuClose.addEventListener("click", () => toggleMenu(false));
 
-    // Close menu when a link is clicked
-    const menuLinks = nav.querySelectorAll(".menu__item a");
-    menuLinks.forEach(link => {
-        link.addEventListener("click", closeMenu);
+    menu.querySelectorAll(".menu__item a").forEach(link => {
+        link.addEventListener("click", () => toggleMenu(false));
     });
 
-    // Close menu when clicking outside (on the dark background)
     document.addEventListener("click", (e) => {
-        const isMenuOpen = toggle.getAttribute("aria-expanded") === "true";
-        const isClickInsideMenu = nav.contains(e.target);
-        const isClickOnButton = toggle.contains(e.target);
-        const isClickOnClose = closeBtn && closeBtn.contains(e.target);
-
-        if (isMenuOpen && !isClickInsideMenu && !isClickOnButton && !isClickOnClose) {
-            closeMenu();
+        if (menuBtn.getAttribute("aria-expanded") === "true" &&
+            !menu.contains(e.target) && !menuBtn.contains(e.target)) {
+            toggleMenu(false);
         }
     });
 }
 
-// ===================================
-// CAROUSELS - Horizontal scroll with smooth snap
-// ===================================
-
-/**
- * Initialize horizontal scroll carousel
- * @param {string} carouselSelector - CSS selector for the carousel container
- */
-function initCarousel(carouselSelector) {
-    const carousels = document.querySelectorAll(carouselSelector);
-
-    carousels.forEach(carousel => {
-        const track = carousel.querySelector(`${carouselSelector}__track`);
+// Carousel drag scroll
+function dragCarousel(selector) {
+    document.querySelectorAll(selector).forEach(carousel => {
+        const track = carousel.querySelector(`${selector}__track`);
         if (!track) return;
 
-        // Enable smooth scrolling
-        track.style.scrollBehavior = 'smooth';
-
-        // Optional: Add touch/drag support for better UX
-        let isDown = false;
-        let startX;
-        let scrollLeft;
+        let isDragging = false;
+        let startPos = 0;
+        let scrollStart = 0;
 
         track.addEventListener('mousedown', (e) => {
-            isDown = true;
+            isDragging = true;
+            startPos = e.pageX;
+            scrollStart = track.scrollLeft;
             track.style.cursor = 'grabbing';
-            startX = e.pageX - track.offsetLeft;
-            scrollLeft = track.scrollLeft;
-        });
-
-        track.addEventListener('mouseleave', () => {
-            isDown = false;
-            track.style.cursor = 'grab';
-        });
-
-        track.addEventListener('mouseup', () => {
-            isDown = false;
-            track.style.cursor = 'grab';
         });
 
         track.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
+            if (!isDragging) return;
             e.preventDefault();
-            const x = e.pageX - track.offsetLeft;
-            const walk = (x - startX) * 2;
-            track.scrollLeft = scrollLeft - walk;
+            track.scrollLeft = scrollStart - (e.pageX - startPos) * 2;
         });
+
+        track.addEventListener('mouseup', () => {
+            isDragging = false;
+            track.style.cursor = 'grab';
+        });
+
+        track.addEventListener('mouseleave', () => isDragging = false);
     });
 }
 
-// Initialize all carousels
-document.addEventListener('DOMContentLoaded', () => {
-    // Partners carousel
-    initCarousel('.partenaires-carousel');
+// Carousel partenaires auto-scroll
+function partnersCarousel() {
+    const carousel = document.querySelector('.partenaires-carousel__track');
+    if (!carousel) return;
 
-    // Team carousel
-    initCarousel('.team');
+    Array.from(carousel.children).forEach(slide => {
+        carousel.appendChild(slide.cloneNode(true));
+    });
+}
 
-    // Artist gallery carousel
-    initCarousel('.artiste1-carousel');
+// Carousel équipe avec navigation
+function teamCarousel() {
+    const team = document.querySelector('.team');
+    if (!team) return;
 
-    // Team carousel navigation buttons
-    initTeamCarouselNavigation();
-});
+    const track = team.querySelector('.team__track');
+    const prev = team.querySelector('.team__button--prev');
+    const next = team.querySelector('.team__button--next');
+    const slides = team.querySelectorAll('.team__slide');
 
-// ===================================
-// TEAM CAROUSEL NAVIGATION
-// ===================================
+    if (!track || !prev || !next || !slides.length) return;
 
-function initTeamCarouselNavigation() {
-    const teamSection = document.querySelector('.team');
-    if (!teamSection) return;
+    let current = 0;
 
-    const track = teamSection.querySelector('.team__track');
-    const prevBtn = teamSection.querySelector('.team__button--prev');
-    const nextBtn = teamSection.querySelector('.team__button--next');
-    const slides = teamSection.querySelectorAll('.team__slide');
-
-    if (!track || !prevBtn || !nextBtn || slides.length === 0) return;
-
-    let currentIndex = 0;
-
-    function updateCarousel() {
-        const slideWidth = slides[0].offsetWidth;
-        const gap = 22; // 1.375rem = 22px gap between slides
-        const scrollPosition = currentIndex * (slideWidth + gap);
-
-        track.scrollTo({
-            left: scrollPosition,
-            behavior: 'smooth'
-        });
-
-        // Disable/enable buttons based on position
-        prevBtn.disabled = currentIndex === 0;
-        nextBtn.disabled = currentIndex >= slides.length - 1;
+    function update() {
+        const width = slides[0].offsetWidth + 22;
+        track.style.transform = `translateX(-${current * width}px)`;
+        prev.disabled = current === 0;
+        next.disabled = current >= slides.length - 1;
     }
 
-    prevBtn.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
+    prev.onclick = () => { if (current > 0) { current--; update(); } };
+    next.onclick = () => { if (current < slides.length - 1) { current++; update(); } };
+    window.onresize = update;
 
-    nextBtn.addEventListener('click', () => {
-        if (currentIndex < slides.length - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
-
-    // Initialize button states
-    updateCarousel();
+    update();
 }
 
+// Header disparait au footer
+function headerHide() {
+    const header = document.querySelector('.header');
+    const footer = document.querySelector('.footer');
+    if (!header || !footer) return;
 
-// ===================================
-// FAQ ACCORDION
-// ===================================
+    header.style.transition = 'opacity 0.4s, transform 0.4s';
 
-document.addEventListener('DOMContentLoaded', () => {
-    const faqQuestions = document.querySelectorAll('.faq__question');
+    new IntersectionObserver((entries) => {
+        const visible = entries[0].isIntersecting;
+        header.style.opacity = visible ? '0' : '1';
+        header.style.transform = visible ? 'translateY(-100%)' : 'translateY(0)';
+        header.style.pointerEvents = visible ? 'none' : 'auto';
+    }, { threshold: 0.1 }).observe(footer);
+}
 
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', () => {
-            const isExpanded = question.getAttribute('aria-expanded') === 'true';
-
-            // Close all other FAQ items
-            faqQuestions.forEach(q => {
-                if (q !== question) {
-                    q.setAttribute('aria-expanded', 'false');
-                }
+// FAQ accordéon
+function faqAccordion() {
+    document.querySelectorAll('.faq__question').forEach(btn => {
+        btn.onclick = () => {
+            const open = btn.getAttribute('aria-expanded') === 'true';
+            document.querySelectorAll('.faq__question').forEach(q => {
+                q.setAttribute('aria-expanded', 'false');
             });
-
-            // Toggle current FAQ item
-            question.setAttribute('aria-expanded', !isExpanded);
-        });
+            btn.setAttribute('aria-expanded', !open);
+        };
     });
+}
+
+// Init
+document.addEventListener('DOMContentLoaded', () => {
+    partnersCarousel();
+    dragCarousel('.team');
+    dragCarousel('.artiste1-carousel');
+    teamCarousel();
+    headerHide();
+    faqAccordion();
 });
+
+
 

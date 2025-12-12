@@ -26,8 +26,23 @@
 .partenaires-carousel__track {
     display: flex;
     gap: 1rem;
-    overflow-x: auto;
+    overflow: hidden;
     padding: 0.5rem 0.75rem;
+    animation: scroll-partners 20s linear infinite;
+}
+
+.partenaires-carousel__track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-partners {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .partenaires-carousel__slide {
