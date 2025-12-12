@@ -56,6 +56,7 @@ if (prevBtn && nextBtn && teamTrack && teamSlides.length > 0) {
 }
 
 // FAQ Accordion
+//
 const faqQuestions = document.querySelectorAll('.faq__question');
 
 faqQuestions.forEach(function (question) {
@@ -71,13 +72,41 @@ faqQuestions.forEach(function (question) {
 });
 
 // Carousel défilé automatique partenaires
-//
+//https://sae105.melvyn-philippon.fr/
 const partnersTrack = document.querySelector('.partenaires-carousel__track');
 
 if (partnersTrack) {
     const slides = Array.from(partnersTrack.children);
-    slides.forEach(function(slide) {
+    slides.forEach(function (slide) {
         const clone = slide.cloneNode(true);
         partnersTrack.appendChild(clone);
     });
 }
+
+// Filtres programme par jour
+//
+const filterButtons = document.querySelectorAll('.program-days__button');
+const programSections = document.querySelectorAll('.program__day, .program__day--background');
+
+filterButtons.forEach(function (button) {
+    button.onclick = function (e) {
+        e.preventDefault();
+        const targetId = button.getAttribute('href').substring(1);
+
+        programSections.forEach(function (section) {
+            section.style.display = 'none';
+        });
+
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.style.display = 'block';
+        }
+
+        filterButtons.forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+        button.classList.add('active');
+    };
+});
+
+//
