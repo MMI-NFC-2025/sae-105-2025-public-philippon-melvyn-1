@@ -21,7 +21,8 @@ if (menuBtn && menu) {
 }
 
 // Carousel équipe
-//
+//https://sae105.melvyn-philippon.fr/apropos
+
 const prevBtn = document.querySelector('.team__button--prev');
 const nextBtn = document.querySelector('.team__button--next');
 const teamTrack = document.querySelector('.team__track');
@@ -52,4 +53,31 @@ if (prevBtn && nextBtn && teamTrack && teamSlides.length > 0) {
     };
 
     prevBtn.disabled = true;
+}
+
+// FAQ Accordion
+const faqQuestions = document.querySelectorAll('.faq__question');
+
+faqQuestions.forEach(function (question) {
+    question.onclick = function () {
+        const isOpen = question.getAttribute('aria-expanded') === 'true';
+
+        faqQuestions.forEach(function (q) {
+            q.setAttribute('aria-expanded', 'false');
+        });
+
+        question.setAttribute('aria-expanded', !isOpen);
+    };
+});
+
+// Carousel défilé automatique partenaires
+//
+const partnersTrack = document.querySelector('.partenaires-carousel__track');
+
+if (partnersTrack) {
+    const slides = Array.from(partnersTrack.children);
+    slides.forEach(function(slide) {
+        const clone = slide.cloneNode(true);
+        partnersTrack.appendChild(clone);
+    });
 }
